@@ -3113,9 +3113,11 @@ input[type=range]::-ms-thumb { border: none; height: 14px; width: 14px; border-r
   .timepicker-text-container { top: 32%; }
   .timepicker-display-am-pm { position: relative; right: auto; bottom: auto; text-align: center; margin-top: 1.2rem; } }
 
-@font-face { font-family: 'inbox'; src: url("../fonts/inbox/inbox.ttf?zge6zu") format("truetype"), url("../fonts/inbox/inbox.woff?zge6zu") format("woff"), url("../fonts/inbox/inbox.svg?zge6zu#inbox") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'inbox'; src: url("../fonts/inbox/inbox.ttf?2yz71v") format("truetype"), url("../fonts/inbox/inbox.woff?2yz71v") format("woff"), url("../fonts/inbox/inbox.svg?2yz71v#inbox") format("svg"); font-weight: normal; font-style: normal; }
 
 [class^="ibx-"], [class*=" ibx-"] { /* use !important to prevent issues with browser extensions that change fonts */ font-family: 'inbox' !important; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; /* Better Font Rendering =========== */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.ibx-env:before { content: "\e900"; }
 
 .ibx-b:before { content: "\62"; }
 
@@ -3124,8 +3126,6 @@ input[type=range]::-ms-thumb { border: none; height: 14px; width: 14px; border-r
 .ibx-n:before { content: "\6e"; }
 
 .ibx-x:before { content: "\78"; }
-
-.ibx-env:before { content: "\e900"; }
 
 .ibx-inbx:before { content: "\e901"; }
 
@@ -3140,11 +3140,11 @@ body { width: 800px; margin-right: auto; margin-left: auto; color: #616161; }
 .ce-effect { position: relative; text-align: center; margin-top: 60px; }
 
 /* Inbox Loading Effect */
-.ibx { position: relative; width: 200px; height: 50px; margin-right: auto; margin-left: auto; }
+.ibx { position: relative; width: 200px; height: 50px; margin-right: auto; margin-left: auto; font-size: 50px; }
 
-.ibx .ibx-inbx { position: absolute; top: 0; left: 0; font-size: 50px; }
+.ibx .ibx-inbx { position: absolute; top: 0; left: 0; }
 
-.ibx .ibx-env { position: absolute; right: 40px; bottom: 0px; font-size: 35px; color: #311b92; }
+.ibx .ibx-env { position: absolute; right: 32px; bottom: 0px; color: #311b92; }
 
 @-webkit-keyframes ibxLoadInbx-in { 0% { color: white; }
   50% { color: white; }
