@@ -1,0 +1,139 @@
+.logo-group {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 100px;
+}
+
+.logo-container-animate {
+    background-repeat: no-repeat;
+    animation-duration: 3.0s;
+    animation-name: loader;
+}
+
+@keyframes loader {
+    0% {
+        box-shadow: none;
+    }
+
+    10% {
+        box-shadow: 0px 0px 10px 0px #ccc;
+    }
+
+    15% {
+        box-shadow: 0px 0px 20px 0px #ccc;
+    }
+
+    40% {
+        box-shadow: 0px 0px 10px 100px #ccc;
+    }
+
+    100% {
+        box-shadow: 0px 0px 100px 50px #fff;
+    }
+}
+
+.logo-img {
+    margin-top: 95px;
+    margin-left: 15px;
+}
+
+.loader-bar-container {
+    width: 200px;
+    height: 10px;
+    margin: auto;
+}
+
+.loader-bar {
+    height: 10px;
+    margin-top: 25px;
+}
+
+.loader-bar-animate {
+    animation-delay: 1.5s;
+    animation-duration: 3.0s;
+    animation-name: loader-bar;
+}
+
+@keyframes loader-bar {
+    0% {
+        background-color: #6ec6ff;
+        width: 0px;
+    }
+
+    90% {
+        background-color: #0069c0;
+        width: 100%;
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+
+
+.logo {
+    position: absolute;
+    margin-top: 85px;
+}
+
+
+@font-face {
+  font-family: 'inbox';
+  src:  url('fonts/inbox.eot?j9c93');
+  src:  url('fonts/inbox.eot?j9c93#iefix') format('embedded-opentype'),
+    url('fonts/inbox.ttf?j9c93') format('truetype'),
+    url('fonts/inbox.woff?j9c93') format('woff'),
+    url('fonts/inbox.svg?j9c93#inbox') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ibx-"], [class*=" ibx-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'inbox' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ibx-env {
+    position: absolute;
+    left: 105px;
+    bottom: 2px;
+    font-size: 20px;
+    animation-delay: 2.0s;
+    animation-duration: 2.0s;
+    animation-name: env;
+    animation-fill-mode: forwards;
+}
+
+@keyframes env {
+    0% {
+        color: #000;
+    }
+
+    100% {
+        color: #2196f3;
+    }
+}
+
+.ibx-inbx {
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.ibx-env:before {
+  content: "\e900";
+}
+.ibx-inbx:before {
+  content: "\e901";
+}
