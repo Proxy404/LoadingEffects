@@ -4,8 +4,8 @@ console.log('loaded');
 
 
 $(document).ready(function () {
-    
-    
+
+
     /* Inbox App Loading Icon */
     $('#ibxBtn1').click(function () {
         var ibx = $(this).closest('.ce-effect-container').find('.ibx');
@@ -40,9 +40,16 @@ $(document).ready(function () {
     });
     
     /* */
-    
-    
-    
-    
-    
+
+
+    /* */
+    $('#circular_explosion').click(function () {
+        $('.logo-group').addClass('logo-container-animate');
+        $('.loader-bar').addClass('loader-bar-animate');
+        setTimeout(function () {
+            $('.logo-group').removeClass('logo-container-animate');
+            $('.loader-bar').removeClass('loader-bar-animate');
+        }, 4500);
+    });
+
 });
