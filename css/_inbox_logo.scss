@@ -4,7 +4,7 @@
     position: relative;
     width: 200px;
     height: 50px;
-    
+
     margin-right: auto;
     margin-left: auto;
 }
@@ -13,9 +13,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    
+
     font-size: 50px;
-    
+
     // text-shadow: 0px 0px 4px $fontColor;
 }
 
@@ -23,11 +23,11 @@
     position: absolute;
     right: 40px;
     bottom: 0px;
-    
+
     font-size: 35px;
-    
+
     color: $accentColor;
-    
+
     // text-shadow: 0px 0px 9px map-get($map: $deep-purple, $key: "base");
 }
 
@@ -35,7 +35,7 @@
     0% {
         color: white;
     }
-    
+
     100% {
         color: $fontColor;
     }
@@ -45,7 +45,7 @@
     0% {
         color: $fontColor;
     }
-    
+
     100% {
         color: white;
     }
@@ -56,87 +56,87 @@
         color: white;
         text-shadow: none;
     }
-    
+
     5% {
         color: white;
         text-shadow: 0px 0px 2px $accentColor;
     }
-    
+
     15% {
         color: white;
         text-shadow: 0px 0px 8px $accentColor;
     }
-    
+
     25% {
         color: white;
         text-shadow: 0px 0px 16px $accentColor;
     }
-    
+
     30% {
         color: white;
         text-shadow: 0px 0px 16px $accentColor;
     }
-    
+
     35% {
         color: white;
         text-shadow: 0px 0px 12px $accentColor;
     }
-    
+
     40% {
         color: white;
         text-shadow: 0px 0px 10px $accentColor;
     }
-    
+
     45% {
         color: white;
         text-shadow: 0px 0px 8px $accentColor;
     }
-    
+
     50% {
         color: white;
         text-shadow: 0px 0px 6px $accentColor;
     }
-    
+
     55% {
         color: white;
         text-shadow: 0px 0px 4px $accentColor;
     }
-    
+
     60% {
         color: map-get($map: $grey, $key: "lighten-4");
         text-shadow: 0px 0px 2px $accentColor;
     }
-    
+
     65% {
         color: map-get($map: $grey, $key: "lighten-3");
         text-shadow: none;
     }
-    
+
     70% {
         color: map-get($map: $grey, $key: "lighten-2");
         text-shadow: none;
     }
-    
+
     75% {
         color: map-get($map: $grey, $key: "lighten-1");
         text-shadow: none;
     }
-    
+
     80% {
         color: map-get($map: $deep-purple, $key: "base");
         text-shadow: none;
     }
-    
+
     85% {
         color: map-get($map: $deep-purple, $key: "darken-1");
         text-shadow: none;
     }
-    
+
     90% {
         color: map-get($map: $deep-purple, $key: "darken-2");
         text-shadow: none;
     }
-    
+
     100% {
         color: $accentColor;
     }
