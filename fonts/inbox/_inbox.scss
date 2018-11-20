@@ -1,10 +1,9 @@
 @font-face {
     font-family: 'inbox';
-    src:  url('../fonts/inbox/inbox.eot?j9c93');
-    src:  url('../fonts/inbox/inbox.eot?j9c93#iefix') format('embedded-opentype'),
-      url('../fonts/inbox/inbox.ttf?j9c93') format('truetype'),
-      url('../fonts/inbox/inbox.woff?j9c93') format('woff'),
-      url('../fonts/inbox/inbox.svg?j9c93#inbox') format('svg');
+    src:
+      url('../fonts/inbox/inbox.ttf?zge6zu') format('truetype'),
+      url('../fonts/inbox/inbox.woff?zge6zu') format('woff'),
+      url('../fonts/inbox/inbox.svg?zge6zu#inbox') format('svg');
     font-weight: normal;
     font-style: normal;
   }
@@ -24,6 +23,18 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .ibx-b:before {
+    content: "\62";
+  }
+  .ibx-I:before {
+    content: "\49";
+  }
+  .ibx-n:before {
+    content: "\6e";
+  }
+  .ibx-x:before {
+    content: "\78";
+  }
   .ibx-env:before {
     content: "\e900";
   }
