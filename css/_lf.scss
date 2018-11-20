@@ -11,17 +11,15 @@ body {
 
 
 .ce-effect-container {
-    margin-top: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-top: 1px solid map-get($map: $blue, $key: "lighten-2");
 }
 
 .ce-effect-header {
     font-size: 40px;
     padding-top: 20px;
-    
-    border-top: 1px solid map-get($map: $blue, $key: "lighten-2");
-    
     text-align: center;
-    
 }
 
 .ce-effect-btn {

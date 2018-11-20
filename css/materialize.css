@@ -3123,9 +3123,9 @@ input[type=range]::-ms-thumb { border: none; height: 14px; width: 14px; border-r
 
 body { width: 800px; margin-right: auto; margin-left: auto; color: #616161; }
 
-.ce-effect-container { margin-top: 20px; }
+.ce-effect-container { margin-top: 100px; margin-bottom: 100px; border-top: 1px solid #64B5F6; }
 
-.ce-effect-header { font-size: 40px; padding-top: 20px; border-top: 1px solid #64B5F6; text-align: center; }
+.ce-effect-header { font-size: 40px; padding-top: 20px; text-align: center; }
 
 .ce-effect-btn { text-align: center; }
 
