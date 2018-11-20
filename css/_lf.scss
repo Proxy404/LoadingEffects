@@ -1,0 +1,36 @@
+
+$fontColor: map-get($map: $grey, $key: "darken-2");
+$accentColor: map-get($map: $deep-purple, $key: "darken-4");
+
+body {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    color: $fontColor;
+}
+
+
+.ce-effect-container {
+    margin-top: 20px;
+}
+
+.ce-effect-header {
+    font-size: 40px;
+    padding-top: 20px;
+    
+    border-top: 1px solid map-get($map: $blue, $key: "lighten-2");
+    
+    text-align: center;
+    
+}
+
+.ce-effect-btn {
+    text-align: center;
+}
+
+.ce-effect {
+    position: relative;
+    text-align: center;
+    margin-top: 60px;
+}
+

@@ -1,0 +1,167 @@
+/* Inbox Loading Effect */
+
+.ibx {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ibx .ibx-inbx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    font-size: 50px;
+    
+    // text-shadow: 0px 0px 4px $fontColor;
+}
+
+.ibx .ibx-env {
+    position: absolute;
+    right: 40px;
+    bottom: 0px;
+    
+    font-size: 35px;
+    
+    color: $accentColor;
+    
+    // text-shadow: 0px 0px 9px map-get($map: $deep-purple, $key: "base");
+}
+
+@keyframes ibxLoadInbx-in  {
+    0% {
+        color: white;
+    }
+    
+    100% {
+        color: $fontColor;
+    }
+}
+
+@keyframes ibxLoadInbx-out  {
+    0% {
+        color: $fontColor;
+    }
+    
+    100% {
+        color: white;
+    }
+}
+
+@keyframes ibxLoadEnv  {
+    0% {
+        color: white;
+        text-shadow: none;
+    }
+    
+    5% {
+        color: white;
+        text-shadow: 0px 0px 2px $accentColor;
+    }
+    
+    15% {
+        color: white;
+        text-shadow: 0px 0px 8px $accentColor;
+    }
+    
+    25% {
+        color: white;
+        text-shadow: 0px 0px 16px $accentColor;
+    }
+    
+    30% {
+        color: white;
+        text-shadow: 0px 0px 16px $accentColor;
+    }
+    
+    35% {
+        color: white;
+        text-shadow: 0px 0px 12px $accentColor;
+    }
+    
+    40% {
+        color: white;
+        text-shadow: 0px 0px 10px $accentColor;
+    }
+    
+    45% {
+        color: white;
+        text-shadow: 0px 0px 8px $accentColor;
+    }
+    
+    50% {
+        color: white;
+        text-shadow: 0px 0px 6px $accentColor;
+    }
+    
+    55% {
+        color: white;
+        text-shadow: 0px 0px 4px $accentColor;
+    }
+    
+    60% {
+        color: map-get($map: $grey, $key: "lighten-4");
+        text-shadow: 0px 0px 2px $accentColor;
+    }
+    
+    65% {
+        color: map-get($map: $grey, $key: "lighten-3");
+        text-shadow: none;
+    }
+    
+    70% {
+        color: map-get($map: $grey, $key: "lighten-2");
+        text-shadow: none;
+    }
+    
+    75% {
+        color: map-get($map: $grey, $key: "lighten-1");
+        text-shadow: none;
+    }
+    
+    80% {
+        color: map-get($map: $deep-purple, $key: "base");
+        text-shadow: none;
+    }
+    
+    85% {
+        color: map-get($map: $deep-purple, $key: "darken-1");
+        text-shadow: none;
+    }
+    
+    90% {
+        color: map-get($map: $deep-purple, $key: "darken-2");
+        text-shadow: none;
+    }
+    
+    100% {
+        color: $accentColor;
+    }
+}
+
+.ibx-run .ibx-inbx {
+    color: white;
+    animation-name: ibxLoadInbx-in;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+.ibx-run .ibx-env {
+    animation-name: bounceInLeft;
+    animation-duration: 1s;
+}
+
+.ibx-end .ibx-inbx {
+    animation-name: ibxLoadInbx-out;
+    animation-duration: 2s;
+    color: white;
+}
+
+.ibx-end .ibx-env {
+    animation-name: hinge;
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+}
