@@ -3139,15 +3139,19 @@ body { width: 800px; margin-right: auto; margin-left: auto; color: #616161; }
 .ibx .ibx-env { position: absolute; right: 40px; bottom: 0px; font-size: 35px; color: #311b92; }
 
 @-webkit-keyframes ibxLoadInbx-in { 0% { color: white; }
+  50% { color: white; }
   100% { color: #616161; } }
 
 @keyframes ibxLoadInbx-in { 0% { color: white; }
+  50% { color: white; }
   100% { color: #616161; } }
 
 @-webkit-keyframes ibxLoadInbx-out { 0% { color: #616161; }
+  50% { color: white; }
   100% { color: white; } }
 
 @keyframes ibxLoadInbx-out { 0% { color: #616161; }
+  50% { color: white; }
   100% { color: white; } }
 
 @-webkit-keyframes ibxLoadEnv { 0% { color: white;
@@ -3222,10 +3226,10 @@ body { width: 800px; margin-right: auto; margin-left: auto; color: #616161; }
     text-shadow: none; }
   100% { color: #311b92; } }
 
-.ibx-run .ibx-inbx { color: white; -webkit-animation-name: ibxLoadInbx-in; animation-name: ibxLoadInbx-in; -webkit-animation-duration: 2s; animation-duration: 2s; -webkit-animation-delay: 1s; animation-delay: 1s; }
+.ibx-run .ibx-inbx { -webkit-animation-name: ibxLoadInbx-in; animation-name: ibxLoadInbx-in; -webkit-animation-duration: 2s; animation-duration: 2s; }
 
 .ibx-run .ibx-env { -webkit-animation-name: bounceInLeft; animation-name: bounceInLeft; -webkit-animation-duration: 1s; animation-duration: 1s; }
 
-.ibx-end .ibx-inbx { -webkit-animation-name: ibxLoadInbx-out; animation-name: ibxLoadInbx-out; -webkit-animation-duration: 2s; animation-duration: 2s; color: white; }
+.ibx-end .ibx-inbx { -webkit-animation-name: ibxLoadInbx-out; animation-name: ibxLoadInbx-out; -webkit-animation-duration: 2s; animation-duration: 2s; }
 
-.ibx-end .ibx-env { -webkit-animation-name: hinge; animation-name: hinge; -webkit-animation-duration: 1.5s; animation-duration: 1.5s; -webkit-animation-delay: 2s; animation-delay: 2s; }
+.ibx-end .ibx-env { -webkit-animation-name: hinge; animation-name: hinge; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-delay: 1s; animation-delay: 1s; }

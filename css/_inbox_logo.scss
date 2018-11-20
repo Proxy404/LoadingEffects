@@ -36,6 +36,10 @@
         color: white;
     }
     
+    50% {
+        color: white;
+    }
+    
     100% {
         color: $fontColor;
     }
@@ -44,6 +48,10 @@
 @keyframes ibxLoadInbx-out  {
     0% {
         color: $fontColor;
+    }
+    
+    50% {
+        color: white;
     }
     
     100% {
@@ -143,10 +151,8 @@
 }
 
 .ibx-run .ibx-inbx {
-    color: white;
     animation-name: ibxLoadInbx-in;
     animation-duration: 2s;
-    animation-delay: 1s;
 }
 
 .ibx-run .ibx-env {
@@ -157,11 +163,10 @@
 .ibx-end .ibx-inbx {
     animation-name: ibxLoadInbx-out;
     animation-duration: 2s;
-    color: white;
 }
 
 .ibx-end .ibx-env {
     animation-name: hinge;
-    animation-duration: 1.5s;
-    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-delay: 1s;
 }

@@ -11,11 +11,9 @@ $(document).ready(function () {
         $('.ibx').addClass('ibx-run');
         setTimeout(function () {
             $('.ibx').addClass('ibx-end');
-            $('.ibx').removeClass('ibx-run');
             setTimeout(function () {
-                $('.ibx').removeClass('ibx-end');
+                $('.ibx').removeClass('ibx-end').removeClass('ibx-run');
             }, 4000);
-            
         }, 3000);
     });
     /* */
