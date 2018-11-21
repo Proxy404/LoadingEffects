@@ -3994,3 +3994,47 @@ body { width: 800px; margin-right: auto; margin-left: auto; margin-bottom: 200px
   100% { color: #2196f3; } }
 
 .g1 .logo-group .ibx-inbx { font-size: 30px; margin-left: 40px; }
+
+.g2 .logo-group { width: 800px; height: 400px; margin: auto; margin-top: 150px; margin-bottom: 150px; border-radius: 100px; }
+
+.g2 .i, .g2 .n, .g2 .b, .g2 .o, .g2 .x { font-size: 96px; font-weight: bold; }
+
+.g2 .letters1 { position: relative; }
+
+.g2 .letters2 { position: relative; color: #2196f3; bottom: 143px; }
+
+.g2 .letters1-animate { background-repeat: no-repeat; -webkit-animation-duration: 3.0s; animation-duration: 3.0s; -webkit-animation-name: letters2-animate; animation-name: letters2-animate; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+@-webkit-keyframes letters2-animate { 0% { font-size: 96px; }
+  15% { font-size: 125px; }
+  50% { font-size: 96px; } }
+
+@keyframes letters2-animate { 0% { font-size: 96px; }
+  15% { font-size: 125px; }
+  50% { font-size: 96px; } }
+
+.g2 .letters2-animate { background-repeat: no-repeat; -webkit-animation-duration: 2.14s; animation-duration: 2.14s; -webkit-animation-name: letters1-animate; animation-name: letters1-animate; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+@-webkit-keyframes letters1-animate { 0% { text-shadow: none; }
+  15% { text-shadow: none; }
+  59% { text-shadow: none; }
+  60% { text-shadow: 0px 0px 0px #333; }
+  65% { text-shadow: 0px 0px 200px #333; }
+  100% { text-shadow: 0px 0px 200px #fff; } }
+
+@keyframes letters1-animate { 0% { text-shadow: none; }
+  15% { text-shadow: none; }
+  59% { text-shadow: none; }
+  60% { text-shadow: 0px 0px 0px #333; }
+  65% { text-shadow: 0px 0px 200px #333; }
+  100% { text-shadow: 0px 0px 200px #fff; } }
+
+.g2 .logo-img { margin-top: 95px; margin-left: 15px; }
+
+.g2 .logo { position: relative; }
+
+.g2 .logo-group .ibx-env { position: relative; left: 105; bottom: 1px; font-size: 96px; -webkit-animation-delay: 2.0s; animation-delay: 2.0s; -webkit-animation-duration: 2.0s; animation-duration: 2.0s; -webkit-animation-name: env; animation-name: env; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+@keyframes env { 0% { color: #000; }
+  100% { color: #2196f3; } }
+/*# sourceMappingURL=materialize.css.map */

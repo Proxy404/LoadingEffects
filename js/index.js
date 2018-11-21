@@ -60,4 +60,15 @@ $(document).ready(function () {
     });
     /* */
 
+
+    /* Inbox App Text Shadow / Color Transition */
+    $('#shadow_transition').click(function () {
+        $('.letter_set1').addClass('letters1-animate');
+        $('.letter_set2').addClass('letters2-animate');
+        setTimeout(function () {
+            $('.letter_set1').removeClass('letters1-animate');
+            $('.letter_set2').removeClass('letters2-animate');
+        }, 3000);
+    });
+
 });
