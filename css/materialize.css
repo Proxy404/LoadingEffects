@@ -3135,7 +3135,7 @@ body { width: 800px; margin-right: auto; margin-left: auto; color: #616161; }
 
 .ce-effect-header { font-size: 40px; padding-top: 40px; text-align: center; }
 
-.ce-effect-btn { text-align: center; }
+.ce-effect-btn { margin-top: 20px; text-align: center; }
 
 .ce-effect { position: relative; text-align: center; margin-top: 60px; }
 
