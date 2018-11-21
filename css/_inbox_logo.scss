@@ -1,75 +1,76 @@
 /* Inbox Loading Effect */
+.a1 {
+    .ibx {
+        position: relative;
+        width: 200px;
+        height: 50px;
 
-.ibx {
-    position: relative;
-    width: 200px;
-    height: 50px;
-
-    margin-right: auto;
-    margin-left: auto;
-    
-    font-size: 50px;
-}
-
-.ibx .ibx-inbx {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.ibx .ibx-env {
-    position: absolute;
-    right: 32px;
-    bottom: 0px;
-    
-    color: $accentColor;
-}
-
-@keyframes ibxLoadInbx-in  {
-    0% {
-        color: white;
+        margin-right: auto;
+        margin-left: auto;
+        
+        font-size: 50px;
     }
-    
-    50% {
-        color: white;
-    }
-    
-    100% {
-        color: $fontColor;
-    }
-}
 
-@keyframes ibxLoadInbx-out  {
-    0% {
-        color: $fontColor;
+    .ibx .ibx-inbx {
+        position: absolute;
+        top: 0;
+        left: 0;
     }
-    
-    50% {
-        color: white;
+
+    .ibx .ibx-env {
+        position: absolute;
+        right: 32px;
+        bottom: 0px;
+        
+        color: $accentColor;
     }
-    
-    100% {
-        color: white;
+
+    @keyframes ibxLoadInbx-in  {
+        0% {
+            color: white;
+        }
+        
+        50% {
+            color: white;
+        }
+        
+        100% {
+            color: $fontColor;
+        }
     }
-}
 
-.ibx-run .ibx-inbx {
-    animation-name: ibxLoadInbx-in;
-    animation-duration: 2s;
-}
+    @keyframes ibxLoadInbx-out  {
+        0% {
+            color: $fontColor;
+        }
+        
+        50% {
+            color: white;
+        }
+        
+        100% {
+            color: white;
+        }
+    }
 
-.ibx-run .ibx-env {
-    animation-name: bounceInLeft;
-    animation-duration: 1s;
-}
+    .ibx-run .ibx-inbx {
+        animation-name: ibxLoadInbx-in;
+        animation-duration: 2s;
+    }
 
-.ibx-end .ibx-inbx {
-    animation-name: ibxLoadInbx-out;
-    animation-duration: 2s;
-}
+    .ibx-run .ibx-env {
+        animation-name: bounceInLeft;
+        animation-duration: 1s;
+    }
 
-.ibx-end .ibx-env {
-    animation-name: hinge;
-    animation-duration: 1s;
-    animation-delay: 1s;
+    .ibx-end .ibx-inbx {
+        animation-name: ibxLoadInbx-out;
+        animation-duration: 2s;
+    }
+
+    .ibx-end .ibx-env {
+        animation-name: hinge;
+        animation-duration: 1s;
+        animation-delay: 1s;
+    }
 }

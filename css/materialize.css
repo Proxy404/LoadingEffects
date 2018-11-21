@@ -3131,7 +3131,7 @@ input[type=range]::-ms-thumb { border: none; height: 14px; width: 14px; border-r
 
 body { width: 800px; margin-right: auto; margin-left: auto; color: #616161; }
 
-.ce-effect-container { padding-bottom: 40px; border-top: 1px solid #64B5F6; }
+.ce-effect-container { padding-bottom: 80px; border-top: 1px solid #64B5F6; }
 
 .ce-effect-header { font-size: 40px; padding-top: 40px; text-align: center; }
 
@@ -3140,11 +3140,11 @@ body { width: 800px; margin-right: auto; margin-left: auto; color: #616161; }
 .ce-effect { position: relative; text-align: center; margin-top: 60px; }
 
 /* Inbox Loading Effect */
-.ibx { position: relative; width: 200px; height: 50px; margin-right: auto; margin-left: auto; font-size: 50px; }
+.a1 .ibx { position: relative; width: 200px; height: 50px; margin-right: auto; margin-left: auto; font-size: 50px; }
 
-.ibx .ibx-inbx { position: absolute; top: 0; left: 0; }
+.a1 .ibx .ibx-inbx { position: absolute; top: 0; left: 0; }
 
-.ibx .ibx-env { position: absolute; right: 32px; bottom: 0px; color: #311b92; }
+.a1 .ibx .ibx-env { position: absolute; right: 32px; bottom: 0px; color: #311b92; }
 
 @-webkit-keyframes ibxLoadInbx-in { 0% { color: white; }
   50% { color: white; }
@@ -3162,18 +3162,18 @@ body { width: 800px; margin-right: auto; margin-left: auto; color: #616161; }
   50% { color: white; }
   100% { color: white; } }
 
-.ibx-run .ibx-inbx { -webkit-animation-name: ibxLoadInbx-in; animation-name: ibxLoadInbx-in; -webkit-animation-duration: 2s; animation-duration: 2s; }
+.a1 .ibx-run .ibx-inbx { -webkit-animation-name: ibxLoadInbx-in; animation-name: ibxLoadInbx-in; -webkit-animation-duration: 2s; animation-duration: 2s; }
 
-.ibx-run .ibx-env { -webkit-animation-name: bounceInLeft; animation-name: bounceInLeft; -webkit-animation-duration: 1s; animation-duration: 1s; }
+.a1 .ibx-run .ibx-env { -webkit-animation-name: bounceInLeft; animation-name: bounceInLeft; -webkit-animation-duration: 1s; animation-duration: 1s; }
 
-.ibx-end .ibx-inbx { -webkit-animation-name: ibxLoadInbx-out; animation-name: ibxLoadInbx-out; -webkit-animation-duration: 2s; animation-duration: 2s; }
+.a1 .ibx-end .ibx-inbx { -webkit-animation-name: ibxLoadInbx-out; animation-name: ibxLoadInbx-out; -webkit-animation-duration: 2s; animation-duration: 2s; }
 
-.ibx-end .ibx-env { -webkit-animation-name: hinge; animation-name: hinge; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-delay: 1s; animation-delay: 1s; }
+.a1 .ibx-end .ibx-env { -webkit-animation-name: hinge; animation-name: hinge; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-delay: 1s; animation-delay: 1s; }
 
 /* Garrett's Styles */
-.logo-group { width: 200px; height: 200px; margin: auto; margin-top: 150px; border-radius: 100px; }
+.g1 .logo-group { width: 200px; height: 200px; margin: auto; margin-top: 150px; border-radius: 100px; }
 
-.logo-container-animate { background-repeat: no-repeat; -webkit-animation-duration: 3.0s; animation-duration: 3.0s; -webkit-animation-name: loader; animation-name: loader; }
+.g1 .logo-container-animate { background-repeat: no-repeat; -webkit-animation-duration: 3.0s; animation-duration: 3.0s; -webkit-animation-name: loader; animation-name: loader; }
 
 @-webkit-keyframes loader { 0% { -webkit-box-shadow: none; box-shadow: none; }
   10% { -webkit-box-shadow: 0px 0px 10px 0px #ccc; box-shadow: 0px 0px 10px 0px #ccc; }
@@ -3187,13 +3187,13 @@ body { width: 800px; margin-right: auto; margin-left: auto; color: #616161; }
   40% { -webkit-box-shadow: 0px 0px 10px 100px #ccc; box-shadow: 0px 0px 10px 100px #ccc; }
   100% { -webkit-box-shadow: 0px 0px 100px 50px #fff; box-shadow: 0px 0px 100px 50px #fff; } }
 
-.logo-img { margin-top: 95px; margin-left: 15px; }
+.g1 .logo-img { margin-top: 95px; margin-left: 15px; }
 
-.loader-bar-container { width: 200px; height: 10px; margin: auto; }
+.g1 .loader-bar-container { width: 200px; height: 10px; margin: auto; }
 
-.loader-bar { height: 10px; margin-top: 25px; }
+.g1 .loader-bar { height: 10px; margin-top: 25px; }
 
-.loader-bar-animate { -webkit-animation-delay: 1.5s; animation-delay: 1.5s; -webkit-animation-duration: 3.0s; animation-duration: 3.0s; -webkit-animation-name: loader-bar; animation-name: loader-bar; }
+.g1 .loader-bar-animate { -webkit-animation-delay: 1.5s; animation-delay: 1.5s; -webkit-animation-duration: 3.0s; animation-duration: 3.0s; -webkit-animation-name: loader-bar; animation-name: loader-bar; }
 
 @-webkit-keyframes loader-bar { 0% { background-color: #6ec6ff;
     width: 0px; }
@@ -3207,9 +3207,9 @@ body { width: 800px; margin-right: auto; margin-left: auto; color: #616161; }
     width: 100%; }
   100% { background-color: transparent; } }
 
-.logo { position: absolute; margin-top: 85px; }
+.g1 .logo { position: absolute; margin-top: 85px; }
 
-.logo-group .ibx-env { position: absolute; left: 105px; bottom: 2px; font-size: 20px; -webkit-animation-delay: 2.0s; animation-delay: 2.0s; -webkit-animation-duration: 2.0s; animation-duration: 2.0s; -webkit-animation-name: env; animation-name: env; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+.g1 .logo-group .ibx-env { position: absolute; left: 105px; bottom: 2px; font-size: 20px; -webkit-animation-delay: 2.0s; animation-delay: 2.0s; -webkit-animation-duration: 2.0s; animation-duration: 2.0s; -webkit-animation-name: env; animation-name: env; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
 
 @-webkit-keyframes env { 0% { color: #000; }
   100% { color: #2196f3; } }
@@ -3217,4 +3217,4 @@ body { width: 800px; margin-right: auto; margin-left: auto; color: #616161; }
 @keyframes env { 0% { color: #000; }
   100% { color: #2196f3; } }
 
-.logo-group .ibx-inbx { font-size: 30px; margin-left: 40px; }
+.g1 .logo-group .ibx-inbx { font-size: 30px; margin-left: 40px; }
