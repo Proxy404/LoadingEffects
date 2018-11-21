@@ -3131,7 +3131,7 @@ input[type=range]::-ms-thumb { border: none; height: 14px; width: 14px; border-r
 
 body { width: 800px; margin-right: auto; margin-left: auto; color: #616161; }
 
-.ce-effect-container { padding-bottom: 80px; border-top: 1px solid #64B5F6; }
+.ce-effect-container { padding-bottom: 80px; border-top: 1px solid #64B5F6; position: relative; }
 
 .ce-effect-header { font-size: 40px; padding-top: 40px; text-align: center; }
 
@@ -3142,33 +3142,113 @@ body { width: 800px; margin-right: auto; margin-left: auto; color: #616161; }
 /* Inbox Loading Effect */
 .a1 .ibx { position: relative; width: 200px; height: 50px; margin-right: auto; margin-left: auto; font-size: 50px; }
 
-.a1 .ibx .ibx-inbx { position: absolute; top: 0; left: 0; }
+.a1 .ibx .ibx-inbx { position: absolute; top: 0; left: 0; z-index: 1; }
 
-.a1 .ibx .ibx-env { position: absolute; right: 32px; bottom: 0px; color: #311b92; }
+.a1 .ibx .ibx-env { position: absolute; right: 32px; bottom: 0px; color: #311b92; background-color: white; z-index: 2; }
 
-@-webkit-keyframes ibxLoadInbx-in { 0% { color: white; }
+@-webkit-keyframes a1-in { 0% { color: white; }
   50% { color: white; }
-  100% { color: #616161; } }
+  to { color: #616161; } }
 
-@keyframes ibxLoadInbx-in { 0% { color: white; }
+@keyframes a1-in { 0% { color: white; }
   50% { color: white; }
-  100% { color: #616161; } }
+  to { color: #616161; } }
 
-@-webkit-keyframes ibxLoadInbx-out { 0% { color: #616161; }
+@-webkit-keyframes a1-out { 0% { color: #616161; }
   50% { color: white; }
-  100% { color: white; } }
+  to { color: white; } }
 
-@keyframes ibxLoadInbx-out { 0% { color: #616161; }
+@keyframes a1-out { 0% { color: #616161; }
   50% { color: white; }
-  100% { color: white; } }
+  to { color: white; } }
 
-.a1 .ibx-run .ibx-inbx { -webkit-animation-name: ibxLoadInbx-in; animation-name: ibxLoadInbx-in; -webkit-animation-duration: 2s; animation-duration: 2s; }
+@-webkit-keyframes a1-slot { 0% { width: 0px;
+    height: 0px;
+    border-radius: 4px;
+    border: 6px solid #311b92; }
+  33% { width: 100px;
+    height: 15px;
+    border-radius: 4px;
+    border: 6px solid #311b92; }
+  66% { width: 100px;
+    height: 15px;
+    border-radius: 4px;
+    border: 6px solid #311b92; }
+  100% { width: 0px;
+    height: 0px;
+    border: 0px solid #311b92; } }
 
-.a1 .ibx-run .ibx-env { -webkit-animation-name: bounceInLeft; animation-name: bounceInLeft; -webkit-animation-duration: 1s; animation-duration: 1s; }
+@keyframes a1-slot { 0% { width: 0px;
+    height: 0px;
+    border-radius: 4px;
+    border: 6px solid #311b92; }
+  33% { width: 100px;
+    height: 15px;
+    border-radius: 4px;
+    border: 6px solid #311b92; }
+  66% { width: 100px;
+    height: 15px;
+    border-radius: 4px;
+    border: 6px solid #311b92; }
+  100% { width: 0px;
+    height: 0px;
+    border: 0px solid #311b92; } }
 
-.a1 .ibx-end .ibx-inbx { -webkit-animation-name: ibxLoadInbx-out; animation-name: ibxLoadInbx-out; -webkit-animation-duration: 2s; animation-duration: 2s; }
+@-webkit-keyframes a1-hinge { 0% { -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out; }
+  20%, 60% { -webkit-transform: rotate3d(0, 0, 1, 80deg);
+    transform: rotate3d(0, 0, 1, 80deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out; }
+  40%, 80% { -webkit-transform: rotate3d(0, 0, 1, 60deg);
+    transform: rotate3d(0, 0, 1, 60deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    opacity: 1; }
+  to { -webkit-transform: translate3d(0, 125px, 0);
+    transform: translate3d(0, 125px, 0);
+    opacity: 0; } }
 
-.a1 .ibx-end .ibx-env { -webkit-animation-name: hinge; animation-name: hinge; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-delay: 1s; animation-delay: 1s; }
+@keyframes a1-hinge { 0% { -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out; }
+  20%, 60% { -webkit-transform: rotate3d(0, 0, 1, 80deg);
+    transform: rotate3d(0, 0, 1, 80deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out; }
+  40%, 80% { -webkit-transform: rotate3d(0, 0, 1, 60deg);
+    transform: rotate3d(0, 0, 1, 60deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    opacity: 1; }
+  to { -webkit-transform: translate3d(0, 125px, 0);
+    transform: translate3d(0, 125px, 0);
+    opacity: 0; } }
+
+.a1 .ibx-run .ibx-inbx { -webkit-animation-name: a1-in; animation-name: a1-in; -webkit-animation-duration: 2s; animation-duration: 2s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+.a1 .ibx-run .ibx-env { -webkit-animation-name: bounceInLeft; animation-name: bounceInLeft; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+.a1 .ibx-end .ibx-inbx { -webkit-animation-name: a1-out; animation-name: a1-out; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-delay: 4s; animation-delay: 4s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+.a1 .ibx-end .ibx-env { -webkit-animation-name: a1-hinge; animation-name: a1-hinge; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-delay: 1s; animation-delay: 1s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+.a1 .mail-slot-container { margin-top: 100px; }
+
+.a1 .mail-slot { margin-right: auto; margin-left: auto; background-color: black; z-index: 5; }
+
+.a1 .ibx-end .mail-slot { -webkit-animation-name: a1-slot; animation-name: a1-slot; -webkit-animation-duration: 3s; animation-duration: 3s; -webkit-animation-delay: 0s; animation-delay: 0s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
 
 /* Garrett's Styles */
 .g1 .logo-group { width: 200px; height: 200px; margin: auto; margin-top: 150px; border-radius: 100px; }

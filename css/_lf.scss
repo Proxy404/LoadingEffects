@@ -15,6 +15,7 @@ body {
     // margin-bottom: 100px;
     padding-bottom: 80px;
     border-top: 1px solid map-get($map: $blue, $key: "lighten-2");
+    position: relative;
 }
 
 .ce-effect-header {

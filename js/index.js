@@ -7,35 +7,35 @@ $(document).ready(function () {
 
 
     /* Inbox App Loading Icon */
-    $('#ibxBtn1').click(function () {
+    $('#a1Btn1').click(function () {
         var ibx = $(this).closest('.ce-effect-container').find('.ibx');
         
         $(ibx).removeClass('ibx-end').removeClass('ibx-run');
         
-        $('#ibxBtn1, #ibxBtn2').attr('disabled', true);
+        $('#a1Btn1, #a1Btn2').attr('disabled', true);
         
         $(ibx).addClass('ibx-run');
         
         setTimeout(function () {
             $(ibx).removeClass('ibx-end').removeClass('ibx-run');
-            $('#ibxBtn1, #ibxBtn2').attr('disabled', false);
+            $('#a1Btn1, #a1Btn2').attr('disabled', false);
         }, 3000);
     });
-    $('#ibxBtn2').click(function () {
-        var ibx = $(this).closest('.ce-effect-container').find('.ibx');
+    $('#a1Btn2').click(function () {
+        var ibx = $(this).closest('.ce-effect-container').find('.ce-effect');
         
         $(ibx).removeClass('ibx-end').removeClass('ibx-run');
         
         $(ibx).addClass('ibx-run');
         
-        $('#ibxBtn1, #ibxBtn2').attr('disabled', true);
+        $('#a1Btn1, #a1Btn2').attr('disabled', true);
         
         setTimeout(function () {
             $(ibx).addClass('ibx-end');
             setTimeout(function () {
                 $(ibx).removeClass('ibx-end').removeClass('ibx-run');
-                $('#ibxBtn1, #ibxBtn2').attr('disabled', false);
-            }, 4000);
+                $('#a1Btn1, #a1Btn2').attr('disabled', false);
+            }, 6000);
         }, 3000);
     });
     
