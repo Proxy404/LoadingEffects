@@ -21,7 +21,7 @@
 
     .ibx .ibx-env {
         position: absolute;
-        right: 32px;
+        right: 39px;
         bottom: 0px;
         
         color: $accentColor;
@@ -29,14 +29,21 @@
         background-color: white;
         
         z-index: 2;
+    }
+    
+    .ibx .fa-align-right {
+        position: absolute;
+        right: 101px;
+        bottom: 0px;
         
-        // -webkit-transform: rotate3d(0, 0, 1, 80deg);
-        //     transform: rotate3d(0, 0, 1, 80deg);
-        //     -webkit-transform-origin: top left;
-        //     transform-origin: top left;
-            
-        // -webkit-transform: translate3d(0, 125px, 0);
-        //   transform: translate3d(0, 125px, 0);
+        font-size: 34px;
+        
+        z-index: 2;
+        
+        transform: rotate(180deg) rotateY(180deg);
+        
+        opacity: 0;
+        
     }
 
     @keyframes a1-in  {
@@ -67,123 +74,159 @@
         }
     }
     
-    @keyframes a1-slot {
+    @keyframes a1-slideInLeft {
+        from {
+          -webkit-transform: translate3d(-400px, 0, 0);
+          transform: translate3d(-400px, 0, 0);
+          visibility: visible;
+        }
+      
+        to {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+    }
+    
+    @keyframes a1-slideInLeft-woosh {
+        from {
+          -webkit-transform: translate3d(-400px, 0, 0);
+          transform: translate3d(-400px, 0, 0) rotate(180deg) rotateY(180deg);
+          visibility: visible;
+          opacity: 1;
+        }
+      
+        to {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0) rotate(180deg) rotateY(180deg);
+          opacity: 0;
+        }
+    }
+    
+    $loadBarWidth: 200px;
+    
+    @keyframes a1-loadBar1 {
         0% {
             width: 0px;
-            height: 0px;
-            border-radius: 4px;
-            border: 6px solid $accentColor;
         }
         
-        33% {
-            width: 100px;
-            height: 15px;
-            border-radius: 4px;
-            border: 6px solid $accentColor;
+        25% {
+            width: 100%;
         }
         
-        66% {
-            width: 100px;
-            height: 15px;
-            border-radius: 4px;
-            border: 6px solid $accentColor;
+        50% {
+            width: 100%;
+        }
+        
+        75% {
+            width: 0px;
         }
         
         100% {
             width: 0px;
-            height: 0px;
-            border: 0px solid $accentColor;
         }
     }
     
-    @keyframes a1-hinge {
+    @keyframes a1-loadBar1 {
         0% {
-          -webkit-transform-origin: top left;
-          transform-origin: top left;
-          -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-        }
-      
-        20%,
-        60% {
-          -webkit-transform: rotate3d(0, 0, 1, 80deg);
-          transform: rotate3d(0, 0, 1, 80deg);
-          -webkit-transform-origin: top left;
-          transform-origin: top left;
-          -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-        }
-      
-        40% {
-          -webkit-transform: rotate3d(0, 0, 1, 60deg);
-          transform: rotate3d(0, 0, 1, 60deg);
-          -webkit-transform-origin: top left;
-          transform-origin: top left;
-          -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-          opacity: 1;
+            width: 0px;
         }
         
-        80% {
-            -webkit-transform: rotate3d(0, 0, 1, 80deg);
-            transform: rotate3d(0, 0, 1, 80deg);
-            -webkit-transform-origin: top left;
-            transform-origin: top left;
-            -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
-            opacity: 1;
-          }
-      
-        to {
-          -webkit-transform: translate3d(0px, 125px, 0px);
-          transform: translate3d(-50px, 125px, 0px);
-          opacity: 0;
+        25% {
+            width: 0px;
         }
-      }
+        
+        50% {
+            width: 200px;
+        }
+    }
+    
+    @keyframes a1-loadBar1 {
+        0% {
+            width: 0px;
+        }
+    }
 
-    .ibx-run .ibx-inbx {
+    .a1-run .ibx-inbx {
         animation-name: a1-in;
         animation-duration: 2s;
         animation-fill-mode: forwards;
     }
 
-    .ibx-run .ibx-env {
-        animation-name: bounceInLeft;
+    .a1-run .ibx-env {
+        animation-name: a1-slideInLeft;
         animation-duration: 1s;
         animation-fill-mode: forwards;
     }
+    
+    .a1-run .fa-align-right {
+        display: block;
+        animation-name: a1-slideInLeft-woosh;
+        animation-duration: 1s;
+        transform: rotate(180deg) rotateY(180deg);
+    }
 
-    .ibx-end .ibx-inbx {
+    .a1-end .ibx-inbx {
         animation-name: a1-out;
         animation-duration: 1s;
         animation-delay: 4s;
         animation-fill-mode: forwards;
     }
 
-    .ibx-end .ibx-env {
+    .a1-end .ibx-env {
         animation-name: a1-hinge;
         animation-duration: 1s;
         animation-delay: 1s;
         animation-fill-mode: forwards;
     }
     
-    .mail-slot-container {
-        margin-top: 100px;
-    }
-    
-    .mail-slot {
+    .loading-bar-container {
+        position: relative;
+        width: $loadBarWidth;
+        
+        margin-top: 30px;
         margin-right: auto;
         margin-left: auto;
-        
-        background-color: black;
-        
-        z-index: 5;
+        height: 30px;
     }
     
-    .ibx-end .mail-slot {
-        animation-name: a1-slot;
-        animation-duration: 3s;
-        animation-delay: 0s;
-        animation-fill-mode: forwards;
+    .loading-bar {
+        position: relative;
+        // top: 0px;
+        // left: 0px;
+        // right: 0px;
+        // bottom: 0px;
+        height: 10px;
+        
+    }
+    
+    .bar1 {
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        background-color: map-get($map: $blue, $key: "darken-2");
+        z-index: 4;
+    }
+    
+    .bar2 {
+        background-color: $accentColor;
+        z-index: 3;
+    }
+    
+    .bar3 {
+        background-color: map-get($map: $purple, $key: "darken-2");
+        z-index: 2;
+    }
+    
+    .a1-run .bar1 {
+        animation-name: a1-loadBar1;
+        animation-duration: 4s;
+    }
+    
+    .a1-run .bar2 {
+        
+    }
+    
+    .a1-run .bar2 {
+        
     }
 }
