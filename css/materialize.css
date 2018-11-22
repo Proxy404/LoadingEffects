@@ -1300,12 +1300,16 @@ img.responsive-img, video.responsive-video { max-width: 100%; height: auto; }
 
 .pinned { position: fixed !important; }
 
-/********************* Transition Classes */
+/*********************
+  Transition Classes
+**********************/
 ul.staggered-list li { opacity: 0; }
 
 .fade-in { opacity: 0; -webkit-transform-origin: 0 50%; transform-origin: 0 50%; }
 
-/********************* Media Query Classes */
+/*********************
+  Media Query Classes
+**********************/
 @media only screen and (max-width: 600px) { .hide-on-small-only, .hide-on-small-and-down { display: none !important; } }
 
 @media only screen and (max-width: 992px) { .hide-on-med-and-down { display: none !important; } }
@@ -1448,7 +1452,9 @@ td, th { padding: 15px 5px; display: table-cell; text-align: left; vertical-alig
   100% { left: 107%;
     right: -8%; } }
 
-/******************* Utility Classes */
+/*******************
+  Utility Classes
+*******************/
 .hide { display: none !important; }
 
 .left-align { text-align: left; }
@@ -2631,7 +2637,9 @@ input[type=range]::-ms-thumb { border: none; height: 14px; width: 14px; border-r
 
 .keyboard-focused input[type=range]:focus:not(.active)::-ms-thumb { box-shadow: 0 0 0 10px rgba(38, 166, 154, 0.26); }
 
-/*************** Nav List */
+/***************
+    Nav List
+***************/
 .table-of-contents.fixed { position: fixed; }
 
 .table-of-contents li { padding: 2px 0; }
@@ -3192,23 +3200,143 @@ body { width: 800px; margin-right: auto; margin-left: auto; margin-bottom: 200px
     transform: translate3d(0, 0, 0) rotate(180deg) rotateY(180deg);
     opacity: 0; } }
 
-@-webkit-keyframes a1-loadBar1 { 0% { width: 0px; }
-  25% { width: 100%; }
-  50% { width: 100%; }
-  75% { width: 0px; }
-  100% { width: 0px; } }
+@-webkit-keyframes a1-loadBar1 { 0% { width: 0px;
+    left: 0px;
+    z-index: 8; }
+  25% { width: 200px;
+    left: 0px;
+    z-index: 8; }
+  50% { width: 0px;
+    left: 200px;
+    z-index: 1; }
+  75% { width: 0px;
+    left: 0px;
+    z-index: 1; }
+  100% { width: 0px;
+    left: 0px;
+    z-index: 1; } }
 
-@keyframes a1-loadBar1 { 0% { width: 0px; }
-  25% { width: 100%; }
-  50% { width: 100%; }
-  75% { width: 0px; }
-  100% { width: 0px; } }
+@keyframes a1-loadBar1 { 0% { width: 0px;
+    left: 0px;
+    z-index: 8; }
+  25% { width: 200px;
+    left: 0px;
+    z-index: 8; }
+  50% { width: 0px;
+    left: 200px;
+    z-index: 1; }
+  75% { width: 0px;
+    left: 0px;
+    z-index: 1; }
+  100% { width: 0px;
+    left: 0px;
+    z-index: 1; } }
 
-@keyframes a1-loadBar1 { 0% { width: 0px; }
-  25% { width: 0px; }
-  50% { width: 200px; } }
+@-webkit-keyframes a1-loadBar2 { 0% { width: 0px;
+    left: 0px;
+    z-index: 8; }
+  25% { width: 0px;
+    left: 0px;
+    z-index: 8; }
+  50% { width: 200px;
+    left: 0;
+    z-index: 8; }
+  75% { width: 0px;
+    left: 200px;
+    z-index: 8; }
+  100% { width: 0px;
+    left: 0px;
+    z-index: 1; } }
 
-@keyframes a1-loadBar1 { 0% { width: 0px; } }
+@keyframes a1-loadBar2 { 0% { width: 0px;
+    left: 0px;
+    z-index: 8; }
+  25% { width: 0px;
+    left: 0px;
+    z-index: 8; }
+  50% { width: 200px;
+    left: 0;
+    z-index: 8; }
+  75% { width: 0px;
+    left: 200px;
+    z-index: 8; }
+  100% { width: 0px;
+    left: 0px;
+    z-index: 1; } }
+
+@-webkit-keyframes a1-loadBar3 { 0% { width: 0px;
+    left: 0px;
+    z-index: 8; }
+  25% { width: 0px;
+    left: 0px;
+    z-index: 8; }
+  50% { width: 0px;
+    left: 0px;
+    z-index: 8; }
+  75% { width: 200px;
+    left: 0;
+    z-index: 8; }
+  100% { width: 0px;
+    left: 200px;
+    z-index: 8; } }
+
+@keyframes a1-loadBar3 { 0% { width: 0px;
+    left: 0px;
+    z-index: 8; }
+  25% { width: 0px;
+    left: 0px;
+    z-index: 8; }
+  50% { width: 0px;
+    left: 0px;
+    z-index: 8; }
+  75% { width: 200px;
+    left: 0;
+    z-index: 8; }
+  100% { width: 0px;
+    left: 200px;
+    z-index: 8; } }
+
+@-webkit-keyframes a1-loadBackground { 0% { opacity: 1;
+    width: 200px;
+    left: 0px;
+    background-color: transparent;
+    z-index: 1; }
+  50% { opacity: 1;
+    width: 200px;
+    left: 0px;
+    background-color: transparent;
+    z-index: 1; }
+  75% { opacity: 1;
+    width: 200px;
+    left: 0px;
+    background-color: #388E3C;
+    z-index: 1; }
+  100% { opacity: 1;
+    width: 200px;
+    left: 0px;
+    background-color: #388E3C;
+    z-index: 1; } }
+
+@keyframes a1-loadBackground { 0% { opacity: 1;
+    width: 200px;
+    left: 0px;
+    background-color: transparent;
+    z-index: 1; }
+  50% { opacity: 1;
+    width: 200px;
+    left: 0px;
+    background-color: transparent;
+    z-index: 1; }
+  75% { opacity: 1;
+    width: 200px;
+    left: 0px;
+    background-color: #388E3C;
+    z-index: 1; }
+  100% { opacity: 1;
+    width: 200px;
+    left: 0px;
+    background-color: #388E3C;
+    z-index: 1; } }
 
 .a1 .a1-run .ibx-inbx { -webkit-animation-name: a1-in; animation-name: a1-in; -webkit-animation-duration: 2s; animation-duration: 2s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
 
@@ -3216,21 +3344,23 @@ body { width: 800px; margin-right: auto; margin-left: auto; margin-bottom: 200px
 
 .a1 .a1-run .fa-align-right { display: block; -webkit-animation-name: a1-slideInLeft-woosh; animation-name: a1-slideInLeft-woosh; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-transform: rotate(180deg) rotateY(180deg); transform: rotate(180deg) rotateY(180deg); }
 
-.a1 .a1-end .ibx-inbx { -webkit-animation-name: a1-out; animation-name: a1-out; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-delay: 4s; animation-delay: 4s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+.a1 .loading-bar-container { position: relative; width: 200px; margin-top: 30px; margin-right: auto; margin-left: auto; height: 10px; opacity: 0; }
 
-.a1 .a1-end .ibx-env { -webkit-animation-name: a1-hinge; animation-name: a1-hinge; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-delay: 1s; animation-delay: 1s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+.a1 .loading-bar { position: absolute; content: ""; height: 10px; width: 200px; top: 0px; left: 0px; }
 
-.a1 .loading-bar-container { position: relative; width: 200px; margin-top: 30px; margin-right: auto; margin-left: auto; height: 30px; }
+.a1 .bar1 { background-color: #1976D2; display: none; }
 
-.a1 .loading-bar { position: relative; height: 10px; }
+.a1 .bar2 { background-color: #311b92; display: none; }
 
-.a1 .bar1 { top: 0px; left: 0px; right: 0px; background-color: #1976D2; z-index: 4; }
+.a1 .bar3 { background-color: #7b1fa2; display: none; }
 
-.a1 .bar2 { background-color: #311b92; z-index: 3; }
+.a1 .a1-run .loading-bar-container { -webkit-animation-name: a1-loadBackground; animation-name: a1-loadBackground; -webkit-animation-duration: 4s; animation-duration: 4s; -webkit-animation-delay: 2s; animation-delay: 2s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
 
-.a1 .bar3 { background-color: #7b1fa2; z-index: 2; }
+.a1 .a1-run .bar1 { -webkit-animation-name: a1-loadBar1; animation-name: a1-loadBar1; -webkit-animation-duration: 4s; animation-duration: 4s; -webkit-animation-delay: 2s; animation-delay: 2s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; display: block; }
 
-.a1 .a1-run .bar1 { -webkit-animation-name: a1-loadBar1; animation-name: a1-loadBar1; -webkit-animation-duration: 4s; animation-duration: 4s; }
+.a1 .a1-run .bar2 { -webkit-animation-name: a1-loadBar2; animation-name: a1-loadBar2; -webkit-animation-duration: 4s; animation-duration: 4s; -webkit-animation-delay: 2s; animation-delay: 2s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; display: block; }
+
+.a1 .a1-run .bar3 { -webkit-animation-name: a1-loadBar3; animation-name: a1-loadBar3; -webkit-animation-duration: 4s; animation-duration: 4s; -webkit-animation-delay: 2s; animation-delay: 2s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; display: block; }
 
 /* Inbox Loading Effect */
 .a2 .ibx { position: relative; width: 200px; height: 50px; margin-right: auto; margin-left: auto; font-size: 50px; }
@@ -3347,7 +3477,7 @@ body { width: 800px; margin-right: auto; margin-left: auto; margin-bottom: 200px
 
 .a2 .a2-run .fa-align-right { display: block; -webkit-animation-name: a2-slideInLeft-woosh; animation-name: a2-slideInLeft-woosh; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-transform: rotate(180deg) rotateY(180deg); transform: rotate(180deg) rotateY(180deg); }
 
-.a2 .a2-end .ibx-inbx { -webkit-animation-name: a2-out; animation-name: a2-out; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-delay: 4s; animation-delay: 4s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+.a2 .a2-end .ibx-inbx { -webkit-animation-name: a2-out; animation-name: a2-out; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-delay: 3s; animation-delay: 3s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
 
 .a2 .a2-end .ibx-env { -webkit-animation-name: a2-hinge; animation-name: a2-hinge; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-delay: 1s; animation-delay: 1s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
 
@@ -4037,4 +4167,3 @@ body { width: 800px; margin-right: auto; margin-left: auto; margin-bottom: 200px
 
 @keyframes env { 0% { color: #000; }
   100% { color: #2196f3; } }
-/*# sourceMappingURL=materialize.css.map */

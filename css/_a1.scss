@@ -107,42 +107,127 @@
     @keyframes a1-loadBar1 {
         0% {
             width: 0px;
+            left: 0px;
+            z-index: 8;
         }
         
         25% {
-            width: 100%;
+            width: $loadBarWidth;
+            left: 0px;
+            z-index: 8;
         }
         
         50% {
-            width: 100%;
+            width: 0px;
+            left: $loadBarWidth;
+            z-index: 1;
         }
         
         75% {
             width: 0px;
+            left: 0px;
+            z-index: 1;
         }
         
         100% {
             width: 0px;
+            left: 0px;
+            z-index: 1;
         }
     }
     
-    @keyframes a1-loadBar1 {
+    @keyframes a1-loadBar2 {
         0% {
             width: 0px;
+            left: 0px;
+            z-index: 8;
         }
         
         25% {
             width: 0px;
+            left: 0px;
+            z-index: 8;
         }
         
         50% {
-            width: 200px;
+            width: $loadBarWidth;
+            left: 0;
+            z-index: 8;
+        }
+        
+        75% {
+            width: 0px;
+            left: $loadBarWidth;
+            z-index: 8;
+        }
+        
+        100% {
+            width: 0px;
+            left: 0px;
+            z-index: 1;
         }
     }
     
-    @keyframes a1-loadBar1 {
+    @keyframes a1-loadBar3 {
         0% {
             width: 0px;
+            left: 0px;
+            z-index: 8;
+        }
+        
+        25% {
+            width: 0px;
+            left: 0px;
+            z-index: 8;
+        }
+        
+        50% {
+            width: 0px;
+            left: 0px;
+            z-index: 8;
+        }
+        
+        75% {
+            width: $loadBarWidth;
+            left: 0;
+            z-index: 8;
+        }
+        
+        100% {
+            width: 0px;
+            left: $loadBarWidth;
+            z-index: 8;
+        }
+    }
+    
+    @keyframes a1-loadBackground {
+        0% {
+            opacity: 1;
+            width: $loadBarWidth;
+            left: 0px;
+            background-color: transparent;
+            z-index: 1;
+        }
+        50% {
+            opacity: 1;
+            width: $loadBarWidth;
+            left: 0px;
+            background-color: transparent;
+            z-index: 1;
+        }
+        75% {
+            opacity: 1;
+            width: $loadBarWidth;
+            left: 0px;
+            background-color: map-get($map: $green, $key: "darken-2");
+            z-index: 1;
+        }
+        100% {
+            opacity: 1;
+            width: $loadBarWidth;
+            left: 0px;
+            background-color: map-get($map: $green, $key: "darken-2");
+            z-index: 1;
         }
     }
 
@@ -164,69 +249,72 @@
         animation-duration: 1s;
         transform: rotate(180deg) rotateY(180deg);
     }
-
-    .a1-end .ibx-inbx {
-        animation-name: a1-out;
-        animation-duration: 1s;
-        animation-delay: 4s;
-        animation-fill-mode: forwards;
-    }
-
-    .a1-end .ibx-env {
-        animation-name: a1-hinge;
-        animation-duration: 1s;
-        animation-delay: 1s;
-        animation-fill-mode: forwards;
-    }
     
     .loading-bar-container {
         position: relative;
+        
         width: $loadBarWidth;
         
         margin-top: 30px;
         margin-right: auto;
         margin-left: auto;
-        height: 30px;
-    }
-    
-    .loading-bar {
-        position: relative;
-        // top: 0px;
-        // left: 0px;
-        // right: 0px;
-        // bottom: 0px;
         height: 10px;
+        opacity: 0;
         
     }
     
-    .bar1 {
+    .loading-bar {
+        position: absolute;
+        content: "";
+        height: 10px;
+        width: $loadBarWidth;
         top: 0px;
         left: 0px;
-        right: 0px;
+    }
+    
+    .bar1 {
         background-color: map-get($map: $blue, $key: "darken-2");
-        z-index: 4;
+        display: none;
     }
     
     .bar2 {
         background-color: $accentColor;
-        z-index: 3;
+        display: none;
     }
     
     .bar3 {
         background-color: map-get($map: $purple, $key: "darken-2");
-        z-index: 2;
+        display: none;
+    }
+    
+    .a1-run .loading-bar-container {
+        animation-name: a1-loadBackground;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
     }
     
     .a1-run .bar1 {
         animation-name: a1-loadBar1;
         animation-duration: 4s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        display: block;
     }
     
     .a1-run .bar2 {
-        
+        animation-name: a1-loadBar2;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        display: block;
     }
     
-    .a1-run .bar2 {
-        
+    .a1-run .bar3 {
+        animation-name: a1-loadBar3;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        display: block;
     }
 }

@@ -6,7 +6,7 @@ console.log('loaded');
 $(document).ready(function () {
 
 
-    /* A2 */
+    /* A1 */
     $('#a1Btn1').click(function () {
         var eff = $(this).closest('.ce-effect-container').find('.ce-effect');
         
@@ -17,9 +17,9 @@ $(document).ready(function () {
         $(eff).addClass('a1-run');
         
         setTimeout(function () {
-            $(eff).removeClass('a1-end').removeClass('a1-run');
+            // $(eff).removeClass('a1-end').removeClass('a1-run');
             $('#a1Btn1, #a1Btn2').attr('disabled', false);
-        }, 3000);
+        }, 4000);
     });
     
     
@@ -55,8 +55,8 @@ $(document).ready(function () {
             setTimeout(function () {
                 $(eff).removeClass('a2-end').removeClass('a2-run');
                 $('#a2Btn1').attr('disabled', false);
-            }, 6000);
-        }, 3000);
+            }, 4000);
+        }, 2000);
     });
     /* */
 
