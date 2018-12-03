@@ -7,6 +7,8 @@ $(document).ready(function () {
 
 
     /* A1 */
+    var whoosh = $('#whoosh')[0];
+    
     $('#a1Btn1').click(function () {
         var eff = $(this).closest('.ce-effect-container').find('.ce-effect');
         
@@ -15,6 +17,7 @@ $(document).ready(function () {
         $('#a1Btn1, #a1Btn2').attr('disabled', true);
         
         $(eff).addClass('a1-run');
+        whoosh.play();
         
         setTimeout(function () {
             // $(eff).removeClass('a1-end').removeClass('a1-run');
@@ -41,6 +44,8 @@ $(document).ready(function () {
     
     
     /* A2 */
+    var wil = $('#wil')[0];
+    
     $('#a2Btn1').click(function () {
         var eff = $(this).closest('.ce-effect-container').find('.ce-effect');
         
@@ -48,10 +53,16 @@ $(document).ready(function () {
         
         $(eff).addClass('a2-run');
         
+        whoosh.play();
+        
         $('#a2Btn1').attr('disabled', true);
         
         setTimeout(function () {
             $(eff).addClass('a2-end');
+            
+            setTimeout(function () {
+                wil.play();
+            }, 1800);
             setTimeout(function () {
                 $(eff).removeClass('a2-end').removeClass('a2-run');
                 $('#a2Btn1').attr('disabled', false);
@@ -62,13 +73,26 @@ $(document).ready(function () {
 
 
     /* Inbox App Text Shadow / Color Transition */
+    
+    var audio = $('#thump')[0];
+    
     $('#shadow_transition').click(function () {
-        $('.letter_set1').addClass('letters1-animate');
-        $('.letter_set2').addClass('letters2-animate');
+        
+        $('#shadow_transition').attr('disabled', true);
+        
         setTimeout(function () {
-            $('.letter_set1').removeClass('letters1-animate');
-            $('.letter_set2').removeClass('letters2-animate');
+            audio.play();
+        }, 500);
+        
+        $('.letters1').addClass('letters1-animate');
+        $('.letters2').addClass('letters2-animate');
+        setTimeout(function () {
+            $('#shadow_transition').attr('disabled', false);
+            $('.letters1').removeClass('letters1-animate');
+            $('.letters2').removeClass('letters2-animate');
         }, 3000);
     });
+    
+
 
 });

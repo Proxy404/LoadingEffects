@@ -1300,16 +1300,12 @@ img.responsive-img, video.responsive-video { max-width: 100%; height: auto; }
 
 .pinned { position: fixed !important; }
 
-/*********************
-  Transition Classes
-**********************/
+/********************* Transition Classes */
 ul.staggered-list li { opacity: 0; }
 
 .fade-in { opacity: 0; -webkit-transform-origin: 0 50%; transform-origin: 0 50%; }
 
-/*********************
-  Media Query Classes
-**********************/
+/********************* Media Query Classes */
 @media only screen and (max-width: 600px) { .hide-on-small-only, .hide-on-small-and-down { display: none !important; } }
 
 @media only screen and (max-width: 992px) { .hide-on-med-and-down { display: none !important; } }
@@ -1452,9 +1448,7 @@ td, th { padding: 15px 5px; display: table-cell; text-align: left; vertical-alig
   100% { left: 107%;
     right: -8%; } }
 
-/*******************
-  Utility Classes
-*******************/
+/******************* Utility Classes */
 .hide { display: none !important; }
 
 .left-align { text-align: left; }
@@ -2637,9 +2631,7 @@ input[type=range]::-ms-thumb { border: none; height: 14px; width: 14px; border-r
 
 .keyboard-focused input[type=range]:focus:not(.active)::-ms-thumb { box-shadow: 0 0 0 10px rgba(38, 166, 154, 0.26); }
 
-/***************
-    Nav List
-***************/
+/*************** Nav List */
 .table-of-contents.fixed { position: fixed; }
 
 .table-of-contents li { padding: 2px 0; }
@@ -4127,37 +4119,63 @@ body { width: 800px; margin-right: auto; margin-left: auto; margin-bottom: 200px
 
 .g2 .logo-group { width: 800px; height: 400px; margin: auto; margin-top: 150px; margin-bottom: 150px; border-radius: 100px; }
 
-.g2 .i, .g2 .n, .g2 .b, .g2 .o, .g2 .x { font-size: 96px; font-weight: bold; }
+.g2 .letters1 { position: absolute; top: 100px; right: 0px; left: 0px; font-size: 96px; font-weight: bold; }
 
-.g2 .letters1 { position: relative; }
+.g2 .letters2 { color: #2196f3; position: absolute; top: 100px; right: 0px; left: 0px; font-size: 96px; font-weight: bold; }
 
-.g2 .letters2 { position: relative; color: #2196f3; bottom: 143px; }
+.g2 .letters1-animate { background-repeat: no-repeat; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-name: letters1-animate; animation-name: letters1-animate; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 
-.g2 .letters1-animate { background-repeat: no-repeat; -webkit-animation-duration: 3.0s; animation-duration: 3.0s; -webkit-animation-name: letters2-animate; animation-name: letters2-animate; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+@-webkit-keyframes letters2-animate { 0% { top: 100px;
+    font-size: 96px;
+    text-shadow: none; }
+  40% { top: 87px;
+    font-size: 112px;
+    text-shadow: none; }
+  49% { top: 100px;
+    font-size: 96px;
+    text-shadow: 0px 0px 0px #333; }
+  50% { top: 100px;
+    font-size: 96px;
+    text-shadow: 0px 0px 200px #333; }
+  100% { top: 100px;
+    font-size: 96px;
+    text-shadow: 0px 0px 200px #fff; } }
 
-@-webkit-keyframes letters2-animate { 0% { font-size: 96px; }
-  15% { font-size: 125px; }
-  50% { font-size: 96px; } }
+@keyframes letters2-animate { 0% { top: 100px;
+    font-size: 96px;
+    text-shadow: none; }
+  40% { top: 87px;
+    font-size: 112px;
+    text-shadow: none; }
+  49% { top: 100px;
+    font-size: 96px;
+    text-shadow: 0px 0px 0px #333; }
+  50% { top: 100px;
+    font-size: 96px;
+    text-shadow: 0px 0px 200px #333; }
+  100% { top: 100px;
+    font-size: 96px;
+    text-shadow: 0px 0px 200px #fff; } }
 
-@keyframes letters2-animate { 0% { font-size: 96px; }
-  15% { font-size: 125px; }
-  50% { font-size: 96px; } }
+@-webkit-keyframes letters1-animate { 0% { top: 100px;
+    font-size: 96px; }
+  40% { top: 78px;
+    font-size: 125px; }
+  49% { top: 100px;
+    font-size: 96px; }
+  100% { top: 100px;
+    font-size: 96px; } }
 
-.g2 .letters2-animate { background-repeat: no-repeat; -webkit-animation-duration: 2.14s; animation-duration: 2.14s; -webkit-animation-name: letters1-animate; animation-name: letters1-animate; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+@keyframes letters1-animate { 0% { top: 100px;
+    font-size: 96px; }
+  40% { top: 78px;
+    font-size: 125px; }
+  49% { top: 100px;
+    font-size: 96px; }
+  100% { top: 100px;
+    font-size: 96px; } }
 
-@-webkit-keyframes letters1-animate { 0% { text-shadow: none; }
-  15% { text-shadow: none; }
-  59% { text-shadow: none; }
-  60% { text-shadow: 0px 0px 0px #333; }
-  65% { text-shadow: 0px 0px 200px #333; }
-  100% { text-shadow: 0px 0px 200px #fff; } }
-
-@keyframes letters1-animate { 0% { text-shadow: none; }
-  15% { text-shadow: none; }
-  59% { text-shadow: none; }
-  60% { text-shadow: 0px 0px 0px #333; }
-  65% { text-shadow: 0px 0px 200px #333; }
-  100% { text-shadow: 0px 0px 200px #fff; } }
+.g2 .letters2-animate { background-repeat: no-repeat; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-name: letters2-animate; animation-name: letters2-animate; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 
 .g2 .logo-img { margin-top: 95px; margin-left: 15px; }
 
