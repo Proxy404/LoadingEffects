@@ -12,11 +12,11 @@ $(document).ready(function () {
     $('#a1Btn1, #a1Btn2').click(function (withSound) {
         var eff = $(this).closest('.ce-effect-container').find('.ce-effect');
         
-        $(eff).removeClass('a1-end').removeClass('a1-run');
+        $(eff).removeClass('ce-run');
         
         $('#a1Btn1, #a1Btn2').attr('disabled', true);
         
-        $(eff).addClass('a1-run');
+        $(eff).addClass('ce-run');
         
         if (this.id == 'a1Btn1') {
             whoosh.play();
@@ -100,7 +100,7 @@ $(document).ready(function () {
 
     /* Inbox App Text Shadow / Color Transition */
     
-    var audio = $('#thump')[0];
+    var thump = $('#thump')[0];
     
     $('#shadow_transition1, #shadow_transition2').click(function () {
         
@@ -108,7 +108,7 @@ $(document).ready(function () {
         
         if (this.id == 'shadow_transition1') {
             setTimeout(function () {
-                audio.play();
+                thump.play();
             }, 500);
         }
         
@@ -121,6 +121,23 @@ $(document).ready(function () {
         }, 3000);
     });
     
-
-
+    
+    /* A3 */
+    
+    $('#a3Btn1, #a3Btn2').click(function () {
+        
+        $('.a3 .ce-effect').removeClass('ce-run');
+        
+        $('#a3Btn1, #a3Btn2').attr('disabled', true);
+        
+        $('.a3 .ce-effect').addClass('ce-run');
+        
+        setTimeout(function () {
+            $('#a3Btn1, #a3Btn2').attr('disabled', false);
+            
+            // $('.a3 .envelope').removeClass('envelope-animate');
+            
+        }, 3000);
+    });
+    
 });

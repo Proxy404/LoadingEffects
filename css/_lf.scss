@@ -1,6 +1,8 @@
 
 $fontColor: map-get($map: $grey, $key: "darken-2");
 $accentColor: map-get($map: $deep-purple, $key: "darken-4");
+$accentColor-purple: map-get($map: $deep-purple, $key: "darken-4");
+$accentColor-blue: map-get($map: $blue, $key: "base");
 
 body {
     width: 800px;

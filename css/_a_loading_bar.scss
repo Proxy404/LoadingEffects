@@ -1,0 +1,202 @@
+$loadBarWidth: 200px;
+
+.loading-bar-container {
+    height: 40px;
+}
+
+@keyframes a1-loadBar1 {
+    0% {
+        width: 0px;
+        left: 0px;
+        z-index: 8;
+    }
+    
+    25% {
+        width: $loadBarWidth;
+        left: 0px;
+        z-index: 8;
+    }
+    
+    50% {
+        width: 0px;
+        left: $loadBarWidth;
+        z-index: 1;
+    }
+    
+    75% {
+        width: 0px;
+        left: 0px;
+        z-index: 1;
+    }
+    
+    100% {
+        width: 0px;
+        left: 0px;
+        z-index: 1;
+    }
+}
+
+@keyframes a1-loadBar2 {
+    0% {
+        width: 0px;
+        left: 0px;
+        z-index: 8;
+    }
+    
+    25% {
+        width: 0px;
+        left: 0px;
+        z-index: 8;
+    }
+    
+    50% {
+        width: $loadBarWidth;
+        left: 0;
+        z-index: 8;
+    }
+    
+    75% {
+        width: 0px;
+        left: $loadBarWidth;
+        z-index: 8;
+    }
+    
+    100% {
+        width: 0px;
+        left: 0px;
+        z-index: 1;
+    }
+}
+
+@keyframes a1-loadBar3 {
+    0% {
+        width: 0px;
+        left: 0px;
+        z-index: 8;
+    }
+    
+    25% {
+        width: 0px;
+        left: 0px;
+        z-index: 8;
+    }
+    
+    50% {
+        width: 0px;
+        left: 0px;
+        z-index: 8;
+    }
+    
+    75% {
+        width: $loadBarWidth;
+        left: 0;
+        z-index: 8;
+    }
+    
+    100% {
+        width: 0px;
+        left: $loadBarWidth;
+        z-index: 8;
+    }
+}
+
+@keyframes a1-loadBackground {
+    0% {
+        opacity: 1;
+        width: $loadBarWidth;
+        left: 0px;
+        background-color: transparent;
+        z-index: 1;
+    }
+    50% {
+        opacity: 1;
+        width: $loadBarWidth;
+        left: 0px;
+        background-color: transparent;
+        z-index: 1;
+    }
+    75% {
+        opacity: 1;
+        width: $loadBarWidth;
+        left: 0px;
+        background-color: map-get($map: $green, $key: "darken-2");
+        z-index: 1;
+    }
+    100% {
+        opacity: 1;
+        width: $loadBarWidth;
+        left: 0px;
+        background-color: map-get($map: $green, $key: "darken-2");
+        z-index: 1;
+    }
+}
+
+
+
+.loading-bars {
+    position: relative;
+    
+    width: $loadBarWidth;
+    
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 10px;
+    opacity: 0;
+    
+}
+
+.loading-bar {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: $loadBarWidth;
+    top: 0px;
+    left: 0px;
+}
+
+.bar1 {
+    background-color: map-get($map: $blue, $key: "darken-2");
+    display: none;
+}
+
+.bar2 {
+    background-color: $accentColor;
+    display: none;
+}
+
+.bar3 {
+    background-color: map-get($map: $purple, $key: "darken-2");
+    display: none;
+}
+
+.ce-run .loading-bars {
+    animation-name: a1-loadBackground;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.ce-run .bar1 {
+    animation-name: a1-loadBar1;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    display: block;
+}
+
+.ce-run .bar2 {
+    animation-name: a1-loadBar2;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    display: block;
+}
+
+.ce-run .bar3 {
+    animation-name: a1-loadBar3;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    display: block;
+}
