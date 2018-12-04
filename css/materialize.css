@@ -4107,7 +4107,7 @@ body { width: 800px; margin-right: auto; margin-left: auto; margin-bottom: 200px
 
 .g1 .logo { position: absolute; margin-top: 85px; }
 
-.g1 .logo-group .ibx-env { position: absolute; left: 105px; bottom: 2px; font-size: 20px; -webkit-animation-delay: 2.0s; animation-delay: 2.0s; -webkit-animation-duration: 2.0s; animation-duration: 2.0s; -webkit-animation-name: env; animation-name: env; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+.g1 .logo-group .ibx-env { position: absolute; left: 104px; bottom: 2px; font-size: 30px; -webkit-animation-delay: 2.0s; animation-delay: 2.0s; -webkit-animation-duration: 2.0s; animation-duration: 2.0s; -webkit-animation-name: env; animation-name: env; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
 
 @-webkit-keyframes env { 0% { color: #000; }
   100% { color: #2196f3; } }
