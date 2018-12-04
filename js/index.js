@@ -27,8 +27,8 @@ $(document).ready(function () {
             $('#a1Btn1, #a1Btn2').attr('disabled', false);
         }, 4000);
     });
-    
-    
+
+
     /* */
 
 
@@ -57,10 +57,10 @@ $(document).ready(function () {
         }, 4500);
     });
     /* */
-    
-    
-    
-    
+
+
+
+
     /* A2 */
     var wil = $('#wil')[0];
     
@@ -69,9 +69,9 @@ $(document).ready(function () {
         var playSound = (this.id == 'a2Btn1');
         
         var eff = $(this).closest('.ce-effect-container').find('.ce-effect');
-        
+
         $(eff).removeClass('a2-end').removeClass('a2-run');
-        
+
         $(eff).addClass('a2-run');
         
         if (playSound) {
@@ -140,4 +140,21 @@ $(document).ready(function () {
         }, 3000);
     });
     
+
+
+    /* G3 */
+
+    $('#g3').click(function () {
+
+        $('#g3').attr('disabled', true);
+
+        $('.cover').addClass('cover-animate');
+        setTimeout(function () {
+            $('#g3').attr('disabled', false);
+            $('.cover').removeClass('cover-animate');
+        }, 20000);
+    });
+
+
+
 });
