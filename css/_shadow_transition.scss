@@ -1,0 +1,144 @@
+.g2 {
+    .logo-group {
+        width: 800px;
+        height: 400px;
+        margin: auto;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        border-radius: 100px;
+    }
+
+    // .i, .n, .b, .o, .x {
+    //     font-size: 96px;
+    //     font-weight: bold;
+    // }
+
+    .letters1 {
+        position: absolute;
+        top: 100px;
+        right: 0px;
+        left: 0px;
+
+        font-size: 96px;
+        font-weight: bold;
+    }
+
+    .letters2 {
+        // position: relative;
+        color: #2196f3;
+        position: absolute;
+        top: 100px;
+
+        right: 0px;
+        left: 0px;
+
+        font-size: 96px;
+        font-weight: bold;
+    }
+
+
+    .letters1-animate {
+        background-repeat: no-repeat;
+        animation-duration: 1s;
+        animation-name: letters1-animate;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    @keyframes letters2-animate {
+        0% {
+            top: 100px;
+            font-size: 96px;
+            text-shadow: none;
+        }
+
+        40% {
+            top: 87px;
+            font-size: 112px;
+            text-shadow: none;
+        }
+
+        49% {
+            top: 100px;
+            font-size: 96px;
+            text-shadow: 0px 0px 0px #333;
+        }
+        50% {
+            top: 100px;
+            font-size: 96px;
+            text-shadow: 0px 0px 200px #333;
+        }
+
+        100% {
+            top: 100px;
+            font-size: 96px;
+            text-shadow: 0px 0px 200px #fff;
+        }
+    }
+
+    @keyframes letters1-animate {
+        0% {
+            top: 100px;
+            font-size: 96px;
+        }
+
+        40% {
+            top: 78px;
+            font-size: 125px;
+        }
+
+        49% {
+            top: 100px;
+            font-size: 96px;
+        }
+
+        100% {
+            top: 100px;
+            font-size: 96px;
+        }
+    }
+
+
+    .letters2-animate {
+        background-repeat: no-repeat;
+        animation-duration: 1s;
+        animation-name: letters2-animate;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+
+
+    .logo-img {
+        margin-top: 95px;
+        margin-left: 15px;
+    }
+
+
+    .logo {
+        position: relative;
+        // margin-top: 85px;
+    }
+
+    .logo-group .ibx-env {
+        position: relative;
+        left: 105;
+        bottom: 1px;
+        font-size: 96px;
+        animation-delay: 2.0s;
+        animation-duration: 2.0s;
+        animation-name: env;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes env {
+        0% {
+            color: #000;
+        }
+
+        100% {
+            color: #2196f3;
+        }
+    }
+
+
+}

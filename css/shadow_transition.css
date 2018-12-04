@@ -6,17 +6,7 @@
 
 .g2 .letters2 { position: relative; color: #ff0000; bottom: 143px; }
 
-.g2 .letters1-animate { background-repeat: no-repeat; -webkit-animation-duration: 1.0s; animation-duration: 1.0s; -webkit-animation-name: letters2-animate; animation-name: letters2-animate; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: cubic-bezier(0.075, 0, 0.165, 1); animation-timing-function: cubic-bezier(0.075, 0, 0.165, 1); }
-
-@-webkit-keyframes letters2-animate { 0% { font-size: 96px; }
-  50% { font-size: 125px; }
-  100% { font-size: 96px; } }
-
-@keyframes letters2-animate { 0% { font-size: 96px; }
-  50% { font-size: 125px; }
-  100% { font-size: 96px; } }
-
-.g2 .letters2-animate { background-repeat: no-repeat; -webkit-animation-duration: 0.50s; animation-duration: 0.50s; -webkit-animation-name: letters1-animate; animation-name: letters1-animate; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+.g2 .letters1-animate { background-repeat: no-repeat; -webkit-animation-duration: 3.0s; animation-duration: 3.0s; -webkit-animation-name: letters2-animate; animation-name: letters2-animate; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: linear; animation-timing-function: linear; }
 
 @-webkit-keyframes letters1-animate { 0% { text-shadow: none; }
   15% { text-shadow: none; }
@@ -32,6 +22,16 @@
   65% { text-shadow: 0px 0px 200px #ff0000; }
   100% { text-shadow: 0px 0px 200px #fff; } }
 
+@-webkit-keyframes letters2-animate { 0% { font-size: 96px; }
+  99% { font-size: 125px; }
+  100% { font-size: 96px; } }
+
+@keyframes letters2-animate { 0% { font-size: 96px; }
+  99% { font-size: 125px; }
+  100% { font-size: 96px; } }
+
+.g2 .letters2-animate { background-repeat: no-repeat; -webkit-animation-duration: 2.14s; animation-duration: 2.14s; -webkit-animation-name: letters1-animate; animation-name: letters1-animate; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: linear; animation-timing-function: linear; }
+
 .g2 .logo-img { margin-top: 95px; margin-left: 15px; }
 
 .g2 .logo { position: relative; }
@@ -43,4 +43,3 @@
 
 @keyframes env { 0% { color: #000; }
   100% { color: #2196f3; } }
-/*# sourceMappingURL=shadow_transition.css.map */
