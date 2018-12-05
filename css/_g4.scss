@@ -1,19 +1,58 @@
 .g4 {
+    
+    .ce-effect {
+        height: 200px;
+    }
+    
+    .logo-group {
+        position: absolute;
+        right: 0;
+        left: 0;
+        
+    }
+    
     .rolling-letters {
         font-size: 84px;
         font-weight: bold;
         background-color: #fff;
+        line-height: 1;
     }
 
-    .ibx-env {
+    
+    $startPos: 0px;
+    
+    .env-container {
         font-size: 84px;
         position: absolute;
-        top: 13px;
-        left: 125px;
+        left: $startPos;
+        bottom: 0px;
+        line-height: 1;
+        // top: 13px;
+        // left: 125px;
+        
+        height: 1px;
+        width: 1px;
+        
+        // animation-name: container-move;
+        // animation-duration: 5s;
+        // animation-fill-mode: forwards;
     }
+    
+    .env-square {
+        height: 58px;
+        width: 89px;
+        background-color: white;
+        border: 4px solid $fontColor;
+        
+        animation-name: env-roll;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        
+    }
+    
 
     .ibx-env-animate {
-        animation: roll $time linear infinite;
+        animation: roll 2s linear infinite;
     }
 
 
@@ -47,39 +86,55 @@
         // }
     // }
 
-    @keyframes placement-move {
+    @keyframes container-move {
         0% {
-            transform:translateX(0px);
+            transform: rotate(0deg);
+            transform-origin: bottom right;
+        }
+        50% {
+            transform: rotate(0deg);
+            transform-origin: bottom right;
         }
         100% {
-            transform:translateX(-200px);
+            transform: rotate(90deg);
+            transform-origin: bottom right;
         }
     }
-    @keyframes roll {
+    @keyframes env-roll {
         0% {
-            transform:rotate(0deg);
-        }
-        5% {
-            transform:rotate(12deg);
-        }
-        10% {
-            transform:rotate(22.5deg);
-        }
-        20% {
-            transform:rotate(38.5deg);
+            transform: rotate(0deg);
+            transform-origin: right bottom;
         }
         25% {
-            transform:rotate(45deg);
+            transform: rotate(90deg);
+            transform-origin: right bottom;
         }
-        34% {
-            transform:rotate(60deg);
+        25.1% {
+            transform:   translate(58px, 100%) rotate(90deg);
+            transform-origin: top right;
         }
-        38% {
-            transform:rotate(80deg);
+        50% {
+            transform:  translate(58px, 100%) rotate(180deg);
+            transform-origin: top right;
         }
-        40%,
+        50.1% {
+            transform: translate(237px, 100%) rotate(180deg);
+            transform-origin: left top;
+        }
+        75% {
+            transform: translate(237px, 100%) rotate(270deg);
+            transform-origin: left top;
+        }
+        // 75.1% {
+        //     transform: translate(400%, 0%) rotate(270deg);
+        //     transform-origin: left bottom;
+        // }
         100% {
-            transform:rotate(90deg);
+            // transform: translate(400%, 0%) rotate(360deg);
+            // transform-origin: left bottom;
+            
+            transform: translate(237px, 100%) rotate(270deg);
+            transform-origin: left top;
         }
     }
     // @keyframes shake {
