@@ -1,55 +1,56 @@
 .g4 {
-    
+
     .ce-effect {
         height: 200px;
     }
-    
+
     .logo-group {
         position: absolute;
         right: 0;
         left: 0;
-        
+
     }
-    
+
     .rolling-letters {
-        font-size: 84px;
+        font-size: 80px;
         font-weight: bold;
         background-color: #fff;
         line-height: 1;
+        color: #333;
     }
 
-    
-    $startPos: 0px;
-    
+
+    $startPos: 125px;
+
     .env-container {
         font-size: 84px;
         position: absolute;
         left: $startPos;
-        bottom: 0px;
+        bottom: 64px;
         line-height: 1;
         // top: 13px;
         // left: 125px;
-        
+
         height: 1px;
         width: 1px;
-        
+
         // animation-name: container-move;
         // animation-duration: 5s;
         // animation-fill-mode: forwards;
     }
-    
+
     .env-square {
         height: 58px;
         width: 89px;
-        background-color: white;
-        border: 4px solid $fontColor;
-        
+        background-color: #2196f3;
+        border: 4px solid #2196f3;
+        z-index: 1;
         animation-name: env-roll;
         animation-duration: 5s;
         animation-fill-mode: forwards;
-        
+
     }
-    
+
 
     .ibx-env-animate {
         animation: roll 2s linear infinite;
@@ -103,57 +104,153 @@
     @keyframes env-roll {
         0% {
             transform: rotate(0deg);
-            transform-origin: right bottom;
+            transform-origin: bottom right;
         }
-        25% {
+        20% {
             transform: rotate(90deg);
-            transform-origin: right bottom;
+            transform-origin: bottom right;
         }
-        25.1% {
+        20.1% {
             transform:   translate(58px, 100%) rotate(90deg);
             transform-origin: top right;
         }
-        50% {
+        40% {
             transform:  translate(58px, 100%) rotate(180deg);
             transform-origin: top right;
         }
-        50.1% {
+        40.1% {
             transform: translate(237px, 100%) rotate(180deg);
-            transform-origin: left top;
+            transform-origin: top left;
         }
-        75% {
+        60% {
             transform: translate(237px, 100%) rotate(270deg);
-            transform-origin: left top;
+            transform-origin: top left;
         }
-        // 75.1% {
-        //     transform: translate(400%, 0%) rotate(270deg);
-        //     transform-origin: left bottom;
-        // }
+        60.1% {
+            transform: translate(295px, 0%) rotate(270deg);
+            transform-origin: bottom left;
+        }
+        80% {
+            // transform: translate(400%, 0%) rotate(360deg);
+            // transform-origin: left bottom;
+
+            transform: translate(295px, 0%) rotate(360deg);
+            transform-origin: bottom left;
+        }
+        80.1% {
+            // transform: translate(400%, 0%) rotate(360deg);
+            // transform-origin: left bottom;
+
+            transform: translate(295px, 0%) rotate(360deg);
+            transform-origin: bottom right;
+        }
         100% {
             // transform: translate(400%, 0%) rotate(360deg);
             // transform-origin: left bottom;
-            
-            transform: translate(237px, 100%) rotate(270deg);
-            transform-origin: left top;
+
+            transform: translate(295px, 0%) rotate(450deg);
+            transform-origin: bottom right;
         }
     }
-    // @keyframes shake {
-    //     0%, 39%, 50%, 100% {
-    //         transform:translateY(0px);
-    //     }
-    //     42% {
-    //         transform:translateY(-20px);
-    //     }
-    //     45% {
-    //         transform:translateY(15px);
-    //     }
-    //     47% {
-    //         transform:translateY(-10px);
-    //     }
-    //     49% {
-    //         transform:translateY(5px);
-    //     }
-    // }
+
+
+    // I
+    .i {
+        color: transparent;
+        animation-name: i-animate;
+        animation-duration: .5s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes i-animate {
+        0% {
+            color: transparent;
+        }
+
+        1%, 100% {
+            color: #333;
+        }
+    }
+
+    // N
+    .n {
+        color: transparent;
+        animation-name: n-animate;
+        animation-duration: .5s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes n-animate {
+        0% {
+            color: transparent;
+        }
+
+        1%, 100% {
+            color: #333;
+        }
+    }
+
+    // B
+    .b {
+        color: transparent;
+        animation-name: b-animate;
+        animation-duration: .5s;
+        animation-delay: 2.8s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes b-animate {
+        0% {
+            color: transparent;
+        }
+
+        1%, 100% {
+            color: #333;
+        }
+    }
+
+    // O
+    .o {
+        color: transparent;
+        animation-name: o-animate;
+        animation-duration: .5s;
+        animation-delay: 3.9s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes o-animate {
+        0% {
+            color: transparent;
+        }
+
+        1%, 100% {
+            color: #333;
+        }
+    }
+
+    // X
+    .x {
+        color: #fff;
+        position: relative;
+        top: 1px;
+        z-index: 2;
+        // animation-name: x-animate;
+        // animation-duration: .5s;
+        // animation-delay: 3.5s;
+        // animation-fill-mode: forwards;
+    }
+
+    @keyframes x-animate {
+        0% {
+            color: transparent;
+        }
+
+        1%, 100% {
+            color: #333;
+        }
+    }
 
 
 }
