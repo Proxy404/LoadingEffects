@@ -1,0 +1,104 @@
+.g4 {
+    .rolling-letters {
+        font-size: 84px;
+        font-weight: bold;
+        background-color: #fff;
+    }
+
+    .ibx-env {
+        font-size: 84px;
+        position: absolute;
+        top: 13px;
+        left: 125px;
+    }
+
+    .ibx-env-animate {
+        animation: roll $time linear infinite;
+    }
+
+
+    // .frame {
+    //     position: fixed;
+    //     top:0px;
+    //     left:0px;
+    //     bottom:-50px;
+    //     right:0px;
+    //     animation: shake $time ease-in-out infinite;
+        // .ground {
+        //     position: absolute;
+        //     top:75%;
+        //     left:0px;
+        //     right:0px;
+        //     bottom:0px;
+        //     background-color:#656D78;
+        // }
+        // .placement {
+        //     position: absolute;
+        //     bottom:25%;
+        //     left:30%;
+        //     animation: placement-move $time linear infinite;
+        // }
+        // .square {
+        //     width:200px;
+        //     height:200px;
+        //     background-color:#BAA286;
+        //     transform-origin:200px 200px;
+        //     animation: roll $time linear infinite;
+        // }
+    // }
+
+    @keyframes placement-move {
+        0% {
+            transform:translateX(0px);
+        }
+        100% {
+            transform:translateX(-200px);
+        }
+    }
+    @keyframes roll {
+        0% {
+            transform:rotate(0deg);
+        }
+        5% {
+            transform:rotate(12deg);
+        }
+        10% {
+            transform:rotate(22.5deg);
+        }
+        20% {
+            transform:rotate(38.5deg);
+        }
+        25% {
+            transform:rotate(45deg);
+        }
+        34% {
+            transform:rotate(60deg);
+        }
+        38% {
+            transform:rotate(80deg);
+        }
+        40%,
+        100% {
+            transform:rotate(90deg);
+        }
+    }
+    // @keyframes shake {
+    //     0%, 39%, 50%, 100% {
+    //         transform:translateY(0px);
+    //     }
+    //     42% {
+    //         transform:translateY(-20px);
+    //     }
+    //     45% {
+    //         transform:translateY(15px);
+    //     }
+    //     47% {
+    //         transform:translateY(-10px);
+    //     }
+    //     49% {
+    //         transform:translateY(5px);
+    //     }
+    // }
+
+
+}
