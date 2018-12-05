@@ -4069,4 +4069,100 @@ body { width: 800px; margin-right: auto; margin-left: auto; margin-bottom: 200px
 
 @keyframes x-animate { 0% { color: transparent; }
   1%, 100% { color: #333; } }
+
+.g5 .ce-effect { height: 200px; }
+
+.g5 .logo-group { position: absolute; right: 0; left: 0; }
+
+.g5 .rolling-letters { font-size: 80px; font-weight: bold; background-color: #fff; line-height: 1; color: #333; }
+
+.g5 .env-container { font-size: 84px; position: absolute; left: 125px; bottom: 64px; line-height: 1; height: 1px; width: 1px; }
+
+.g5 .env-square { height: 58px; width: 89px; background-color: #311b92; z-index: 1; -webkit-animation-name: env-roll; animation-name: env-roll; -webkit-animation-duration: 5s; animation-duration: 5s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+.g5 .flap1 { position: relative; width: 0px; height: 0px; border-left: 44.5px solid transparent; border-top: 44.5px solid #311b92; border-right: 44.5px solid transparent; -webkit-animation-name: flap-animate; animation-name: flap-animate; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-delay: 4.3s; animation-delay: 4.3s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; z-index: 5; }
+
+.g5 .flap2 { position: absolute; top: 0px; width: 0px; height: 0px; border-left: 44.5px solid transparent; border-top: 48.5px solid #512da8; border-right: 44.5px solid transparent; position: absolute; -webkit-animation-name: flap-animate; animation-name: flap-animate; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-delay: 4.3s; animation-delay: 4.3s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; z-index: 2; }
+
+@-webkit-keyframes flap-animate { 0% { border-top: 44.5px solid #311b92;
+    border-left: 44.5px solid transparent;
+    border-right: 44.5px solid transparent; }
+  100% { border-top: 44.5px solid transparent;
+    border-left: 44.5px solid transparent;
+    border-right: 44.5px solid transparent; } }
+
+@keyframes flap-animate { 0% { border-top: 44.5px solid #311b92;
+    border-left: 44.5px solid transparent;
+    border-right: 44.5px solid transparent; }
+  100% { border-top: 44.5px solid transparent;
+    border-left: 44.5px solid transparent;
+    border-right: 44.5px solid transparent; } }
+
+.g5 .ibx-env-animate { -webkit-animation: roll 2s linear infinite; animation: roll 2s linear infinite; }
+
+@keyframes container-move { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg);
+    -webkit-transform-origin: bottom right;
+            transform-origin: bottom right; }
+  50% { -webkit-transform: rotate(0deg); transform: rotate(0deg);
+    -webkit-transform-origin: bottom right;
+            transform-origin: bottom right; }
+  100% { -webkit-transform: rotate(90deg); transform: rotate(90deg);
+    -webkit-transform-origin: bottom right;
+            transform-origin: bottom right; } }
+
+@keyframes env-roll { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg);
+    -webkit-transform-origin: bottom right;
+            transform-origin: bottom right; }
+  20% { -webkit-transform: rotate(90deg); transform: rotate(90deg);
+    -webkit-transform-origin: bottom right;
+            transform-origin: bottom right; }
+  20.1% { -webkit-transform: translate(58px, 100%) rotate(90deg); transform: translate(58px, 100%) rotate(90deg);
+    -webkit-transform-origin: top right;
+            transform-origin: top right; }
+  40% { -webkit-transform: translate(58px, 100%) rotate(180deg); transform: translate(58px, 100%) rotate(180deg);
+    -webkit-transform-origin: top right;
+            transform-origin: top right; }
+  40.1% { -webkit-transform: translate(237px, 100%) rotate(180deg); transform: translate(237px, 100%) rotate(180deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left; }
+  60% { -webkit-transform: translate(237px, 100%) rotate(270deg); transform: translate(237px, 100%) rotate(270deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left; }
+  60.1% { -webkit-transform: translate(295px, 0%) rotate(270deg); transform: translate(295px, 0%) rotate(270deg);
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left; }
+  80% { -webkit-transform: translate(295px, 0%) rotate(360deg); transform: translate(295px, 0%) rotate(360deg);
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left; }
+  80.1% { -webkit-transform: translate(295px, 0%) rotate(360deg); transform: translate(295px, 0%) rotate(360deg);
+    -webkit-transform-origin: bottom right;
+            transform-origin: bottom right; }
+  100% { -webkit-transform: translate(295px, 0%) rotate(450deg); transform: translate(295px, 0%) rotate(450deg);
+    -webkit-transform-origin: bottom right;
+            transform-origin: bottom right; } }
+
+.g5 .i { color: transparent; -webkit-animation-name: i-animate; animation-name: i-animate; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-delay: 1s; animation-delay: 1s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+@keyframes i-animate { 0% { color: transparent; }
+  1%, 100% { color: #333; } }
+
+.g5 .n { color: transparent; -webkit-animation-name: n-animate; animation-name: n-animate; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-delay: 2s; animation-delay: 2s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+@keyframes n-animate { 0% { color: transparent; }
+  1%, 100% { color: #333; } }
+
+.g5 .b { color: transparent; -webkit-animation-name: b-animate; animation-name: b-animate; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-delay: 2.8s; animation-delay: 2.8s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+@keyframes b-animate { 0% { color: transparent; }
+  1%, 100% { color: #333; } }
+
+.g5 .o { color: transparent; -webkit-animation-name: o-animate; animation-name: o-animate; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-delay: 3.9s; animation-delay: 3.9s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+@keyframes o-animate { 0% { color: transparent; }
+  1%, 100% { color: #333; } }
+
+.g5 .x { color: #fff; position: relative; top: 1px; z-index: 2; }
+
+@keyframes x-animate { 0% { color: transparent; }
+  1%, 100% { color: #333; } }
 /*# sourceMappingURL=materialize.css.map */

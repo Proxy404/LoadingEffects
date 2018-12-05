@@ -1,0 +1,249 @@
+.g5 {
+
+    .ce-effect {
+        height: 200px;
+    }
+
+    .logo-group {
+        position: absolute;
+        right: 0;
+        left: 0;
+
+    }
+
+    .rolling-letters {
+        font-size: 80px;
+        font-weight: bold;
+        background-color: #fff;
+        line-height: 1;
+        color: #333;
+    }
+
+    $startPos: 125px;
+
+    .env-container {
+        font-size: 84px;
+        position: absolute;
+        left: $startPos;
+        bottom: 64px;
+        line-height: 1;
+        height: 1px;
+        width: 1px;
+    }
+
+    .env-square {
+        height: 58px;
+        width: 89px;
+        // background-color: $accentColor-blue;
+        background-color: $accentColor-purple;
+        z-index: 1;
+        animation-name: env-roll;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+    }
+
+    .flap1 {
+        position: relative;
+        width: 0px;
+        height: 0px;
+        border-left: 44.5px solid transparent;
+        // border-top: 44.5px solid $accentColor-blue;
+        border-top: 44.5px solid $accentColor-purple;
+        border-right: 44.5px solid transparent;
+        animation-name: flap-animate;
+        animation-duration: 1s;
+        animation-delay: 4.3s;
+        animation-fill-mode: forwards;
+        z-index: 5;
+    }
+
+    .flap2 {
+        position: absolute;
+        top: 0px;
+        width: 0px;
+        height: 0px;
+        border-left: 44.5px solid transparent;
+        // border-top: 48.5px solid map-get($map: $blue, $key: "darken-2");
+        border-top: 48.5px solid map-get($map: $deep-purple, $key: "darken-2");
+        border-right: 44.5px solid transparent;
+        position: absolute;
+        animation-name: flap-animate;
+        animation-duration: 1s;
+        animation-delay: 4.3s;
+        animation-fill-mode: forwards;
+
+        z-index: 2;
+    }
+
+    @keyframes flap-animate {
+        0% {
+            border-top: 44.5px solid $accentColor-purple;
+            border-left: 44.5px solid transparent;
+            border-right: 44.5px solid transparent;
+        }
+
+        100% {
+            border-top: 44.5px solid transparent;
+            border-left: 44.5px solid transparent;
+            border-right: 44.5px solid transparent;
+        }
+    }
+
+    .ibx-env-animate {
+        animation: roll 2s linear infinite;
+    }
+
+    @keyframes container-move {
+        0% {
+            transform: rotate(0deg);
+            transform-origin: bottom right;
+        }
+        50% {
+            transform: rotate(0deg);
+            transform-origin: bottom right;
+        }
+        100% {
+            transform: rotate(90deg);
+            transform-origin: bottom right;
+        }
+    }
+    @keyframes env-roll {
+        0% {
+            transform: rotate(0deg);
+            transform-origin: bottom right;
+        }
+        20% {
+            transform: rotate(90deg);
+            transform-origin: bottom right;
+        }
+        20.1% {
+            transform:   translate(58px, 100%) rotate(90deg);
+            transform-origin: top right;
+        }
+        40% {
+            transform:  translate(58px, 100%) rotate(180deg);
+            transform-origin: top right;
+        }
+        40.1% {
+            transform: translate(237px, 100%) rotate(180deg);
+            transform-origin: top left;
+        }
+        60% {
+            transform: translate(237px, 100%) rotate(270deg);
+            transform-origin: top left;
+        }
+        60.1% {
+            transform: translate(295px, 0%) rotate(270deg);
+            transform-origin: bottom left;
+        }
+        80% {
+            transform: translate(295px, 0%) rotate(360deg);
+            transform-origin: bottom left;
+        }
+        80.1% {
+            transform: translate(295px, 0%) rotate(360deg);
+            transform-origin: bottom right;
+        }
+        100% {
+            transform: translate(295px, 0%) rotate(450deg);
+            transform-origin: bottom right;
+        }
+    }
+
+
+    // I
+    .i {
+        color: transparent;
+        animation-name: i-animate;
+        animation-duration: .5s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes i-animate {
+        0% {
+            color: transparent;
+        }
+
+        1%, 100% {
+            color: #333;
+        }
+    }
+
+    // N
+    .n {
+        color: transparent;
+        animation-name: n-animate;
+        animation-duration: .5s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes n-animate {
+        0% {
+            color: transparent;
+        }
+
+        1%, 100% {
+            color: #333;
+        }
+    }
+
+    // B
+    .b {
+        color: transparent;
+        animation-name: b-animate;
+        animation-duration: .5s;
+        animation-delay: 2.8s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes b-animate {
+        0% {
+            color: transparent;
+        }
+
+        1%, 100% {
+            color: #333;
+        }
+    }
+
+    // O
+    .o {
+        color: transparent;
+        animation-name: o-animate;
+        animation-duration: .5s;
+        animation-delay: 3.9s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes o-animate {
+        0% {
+            color: transparent;
+        }
+
+        1%, 100% {
+            color: #333;
+        }
+    }
+
+    // X
+    .x {
+        color: #fff;
+        position: relative;
+        top: 1px;
+        z-index: 2;
+    }
+
+    @keyframes x-animate {
+        0% {
+            color: transparent;
+        }
+
+        1%, 100% {
+            color: #333;
+        }
+    }
+
+
+}
