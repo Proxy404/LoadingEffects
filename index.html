@@ -27,7 +27,7 @@
 		<h1>
 			CSS Animation Effects
 		</h1>
-
+		
 
 		<div class="ce-effect-container a1">
 
@@ -37,7 +37,10 @@
 
 			<div class="ce-effect-btn">
 				<button class="btn btn-default" id="a1Btn1">
-					View
+					View (Sound)
+				</button>
+				<button class="btn btn-default" id="a1Btn2">
+					View (No Sound)
 				</button>
 			</div>
 
@@ -49,14 +52,13 @@
 				</div>
 
 				<div class="loading-bar-container">
-					<div class="loading-bar bar1"></div>
-					<div class="loading-bar bar2"></div>
-					<div class="loading-bar bar3"></div>
+					<div class="loading-bars">
+						<div class="loading-bar bar1"></div>
+						<div class="loading-bar bar2"></div>
+						<div class="loading-bar bar3"></div>
+					</div>
 				</div>
 
-			</div>
-
-			<div class="mail-slot">
 			</div>
 
 		</div>
@@ -70,7 +72,10 @@
 
 			<div class="ce-effect-btn">
 				<button class="btn btn-default" id="a2Btn1">
-					View
+					View (Sound)
+				</button>
+				<button class="btn btn-default" id="a2Btn2">
+					View (No Sound)
 				</button>
 			</div>
 
@@ -101,8 +106,11 @@
 			</div>
 
 			<div class="ce-effect-btn">
-				<button class="btn btn-default" id="circular_explosion">
-					View
+				<button class="btn btn-default" id="circular_explosion1">
+					View (Sound)
+				</button>
+				<button class="btn btn-default" id="circular_explosion2">
+					View (No Sound)
 				</button>
 			</div>
 
@@ -129,8 +137,11 @@
 			</div>
 
 			<div class="ce-effect-btn">
-				<button class="btn btn-default" id="shadow_transition">
-					View
+				<button class="btn btn-default" id="shadow_transition1">
+					View (Sound)
+				</button>
+				<button class="btn btn-default" id="shadow_transition2">
+					View (No Sound)
 				</button>
 			</div>
 
@@ -191,6 +202,47 @@
 			</div>
 
 		</div>
+		
+		
+		<div class="ce-effect-container a3">
+			
+			<div class="ce-effect-header">
+				3D Letter
+			</div>
+			
+			<div class="ce-effect-btn">
+				<button class="btn btn-default" id="a3Btn1">
+					View
+				</button>
+				<!-- <button class="btn btn-default" id="a3Btn2">
+					View (No Sound)
+				</button> -->
+			</div>
+			
+			<div class="ce-effect">
+				<div class="envelope-container">
+					<div class="envelope">
+						<i class="ibx-env"></i>
+					</div>
+				</div>
+				
+				<div class="inbox-container">
+					<div class="inbox">
+						INBOX
+					</div>
+				</div>
+				
+				<div class="loading-bar-container">
+					<div class="loading-bars">
+						<div class="loading-bar bar1"></div>
+						<div class="loading-bar bar2"></div>
+						<div class="loading-bar bar3"></div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
 
 
 		<div class="ce-effect-container g4">
@@ -232,13 +284,16 @@
 		</audio>
 
 		<audio id="wil">
-			<source id="wil" src="./sounds/13797__sweetneo85__wilhelm.wav"></source>
+			<source src="./sounds/13797__sweetneo85__wilhelm.wav"></source>
 		</audio>
 
 		<audio id="whoosh">
-			<source id="wil" src="./sounds/267950__anagar__whoosh.wav"></source>
+			<source src="./sounds/267950__anagar__whoosh.wav"></source>
 		</audio>
 
+		<audio id="explosion">
+			<source src="./sounds/268557__cydon__explosion-001.mp3"></source>
+		</audio>
 
 	</body>
 

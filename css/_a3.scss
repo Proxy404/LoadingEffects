@@ -1,462 +1,116 @@
 /* Inbox Loading Effect */
 .a3 {
-    .ibx {
+    
+    .ce-effect {
         position: relative;
-        width: 200px;
-        height: 50px;
-
-        margin-right: auto;
-        margin-left: auto;
-        
-        font-size: 50px;
+        height: 300px;
     }
-
-    .ibx .ibx-inbx {
+    
+    .envelope-container {
         position: absolute;
+        
         top: 0;
+        right: 0;
         left: 0;
         
-        z-index: 1;
-    }
-
-    .ibx .ibx-env {
-        position: absolute;
-        right: 39px;
-        bottom: 0px;
-        
-        color: $accentColor;
-        
-        background-color: white;
-        
-        z-index: 2;
+        height: 204px;
     }
     
-    .ibx .fa-align-right {
-        position: absolute;
-        right: 101px;
-        bottom: 0px;
+    .envelope {
         
-        font-size: 34px;
+        text-align: center;
         
-        z-index: 2;
+        font-size: 200px;
+        color: $accentColor-purple;
+        line-height: 1;
         
-        transform: rotate(180deg) rotateY(180deg);
-        
-        opacity: 0;
-        
-    }
-
-    @keyframes a3-in  {
-        0% {
-            color: white;
-        }
-        
-        50% {
-            color: white;
-        }
-        
-        to {
-            color: $fontColor;
-        }
-    }
-
-    @keyframes a3-out  {
-        0% {
-            color: $fontColor;
-        }
-        
-        50% {
-            color: white;
-        }
-        
-        to {
-            color: white;
-        }
+        // transform: perspective(500px) rotatex(80deg);
     }
     
-    @keyframes a3-hinge {
-        0% {
-          -webkit-transform-origin: top left;
-          transform-origin: top left;
-          -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-        }
-      
-        20%,
-        60% {
-          -webkit-transform: rotate3d(0, 0, 1, 80deg);
-          transform: rotate3d(0, 0, 1, 80deg);
-          -webkit-transform-origin: top left;
-          transform-origin: top left;
-          -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-        }
-      
-        40% {
-          -webkit-transform: rotate3d(0, 0, 1, 60deg);
-          transform: rotate3d(0, 0, 1, 60deg);
-          -webkit-transform-origin: top left;
-          transform-origin: top left;
-          -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-          opacity: 1;
-        }
+    .inbox-container {
+        position: absolute; 
+        top: 204px;
+        right: 0px;
+        left: 0px;
         
-        80% {
-            -webkit-transform: rotate3d(0, 0, 1, 80deg);
-            transform: rotate3d(0, 0, 1, 80deg);
-            -webkit-transform-origin: top left;
-            transform-origin: top left;
-            -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
-            opacity: 1;
-          }
-      
-        to {
-          -webkit-transform: translate3d(0px, 125px, 0px);
-          transform: translate3d(-50px, 125px, 0px);
-          opacity: 0;
-        }
+        text-align: center;
     }
     
-    @keyframes a3-slideInLeft {
-        from {
-          -webkit-transform: translate3d(-400px, 0, 0);
-          transform: translate3d(-400px, 0, 0);
-          visibility: visible;
-        }
-      
-        to {
-          -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-        }
+    .inbox {
+        font-size: 75px;
+        line-height: 1;
+        color: $fontColor;
+        
     }
     
-    @keyframes a3-slideInLeft-woosh {
-        from {
-          -webkit-transform: translate3d(-400px, 0, 0);
-          transform: translate3d(-400px, 0, 0) rotate(180deg) rotateY(180deg);
-          visibility: visible;
-          opacity: 1;
-        }
-      
-        to {
-          -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0) rotate(180deg) rotateY(180deg);
-          opacity: 0;
-        }
-    }
-        
-
-    .a3-run .ibx-inbx {
-        animation-name: a3-in;
+    
+    .ce-run .envelope {
+        animation-name: envelope-slide-drop;
         animation-duration: 2s;
         animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
     }
-
-    .a3-run .ibx-env {
-        animation-name: a3-slideInLeft;
-        animation-duration: 1s;
+    
+    .ce-run .inbox {
+        animation-name: inbox-rotate-in;
+        animation-duration: 2s;
         animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
     }
     
-    .a3-run .fa-align-right {
-        display: block;
-        animation-name: a3-slideInLeft-woosh;
-        animation-duration: 1s;
-        transform: rotate(180deg) rotateY(180deg);
-    }
-
-    .a3-end .ibx-inbx {
-        animation-name: a3-out;
-        animation-duration: 1s;
-        animation-delay: 4s;
-        animation-fill-mode: forwards;
-    }
-
-    .a3-end .ibx-env {
-        animation-name: a3-hinge;
-        animation-duration: 1s;
-        animation-delay: 1s;
-        animation-fill-mode: forwards;
-    }
-    
-    .mail-slot-container {
-        margin-top: 100px;
-        position: relative;
-    }
-    
-    
-    @keyframes a3-slot-x {
+    @keyframes envelope-slide-drop {
         0% {
-            width: 100px;
-            height: 0px;
-            border-bottom: 0px solid $accentColor;
-            border-left: 0px solid transparent;
-            border-right: 0px solid transparent;
-            z-index: 1;
+            transform: translateX(-400px);
+            animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
         }
         
-        33% {
-            width: 150px;
-            height: 0px;
-            border-bottom: 20px solid $accentColor;
-            border-left: 25px solid transparent;
-            border-right: 25px solid transparent;
-            z-index: 1;
+        49% {
+            transform: translateX(0px);
+            animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
         }
-        
-        66% {
-            width: 150px;
-            height: 0px;
-            border-bottom: 20px solid $accentColor;
-            border-left: 25px solid transparent;
-            border-right: 25px solid transparent;
-            z-index: 1;
+        50% {
+            transform: perspective(1000px) rotateX(0deg);
+            transform-origin: bottom;
+            animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
         }
         
         100% {
-            width: 100px;
-            height: 0px;
-            border-bottom: 0px solid $accentColor;
-            border-left: 0px solid transparent;
-            border-right: 0px solid transparent;
-            z-index: 1;
+            transform: perspective(500px) rotatex(90deg);
+            transform-origin: bottom;
+            animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
         }
     }
     
-    @keyframes a3-slot-y {
+    @keyframes inbox-rotate-in {
         0% {
-            position: relative;
-            top: 0px;
-            content: '';
-            border: 0px solid $accentColor;
-            height: 0px;
-            width: 100px;
-            z-index: 6;
-            
-            margin-right: auto;
-            margin-left: auto;
+            transform: perspective(500px) rotateX(-90deg);
+            transform-origin: top;
         }
         
-        33% {
-            position: relative;
-            top: -20px;
-            content: '';
-            border: 2px solid $accentColor;
-            height: 20px;
-            width: 100px;
-            z-index: 6;
-            
-            margin-right: auto;
-            margin-left: auto;
+        49% {
+            transform: perspective(500px) rotateX(-90deg);
+            transform-origin: top;
         }
         
-        66% {
-            position: relative;
-            top: -20px;
-            content: '';
-            border: 2px solid $accentColor;
-            height: 20px;
-            width: 100px;
-            z-index: 6;
-            
-            margin-right: auto;
-            margin-left: auto;
+        50% {
+            transform: perspective(500px) rotateX(-90deg);
+            transform-origin: top;
         }
         
         100% {
-            position: relative;
-            top: 0px;
-            content: '';
-            border: 0px solid $accentColor;
-            height: 0px;
-            width: 100px;
-            z-index: 6;
-            
-            margin-right: auto;
-            margin-left: auto;
-        }
-    }
-    
-    @keyframes a3-slot-z {
-        0% {
-            position: relative;
-            top: 0px;
-            left: 0;
-            content: '';
-            border-bottom: 0px solid white;
-            border-left: 0px solid transparent;
-            border-right: 0px solid transparent;
-            height: 0px;
-            width: 100px;
-            
-            z-index: 3;
-            
-            margin-right: auto;
-            margin-left: auto;
-        }
-        
-        33% {
-            position: relative;
-            top: -38px;
-            left: 0;
-            content: '';
-            border-bottom: 16px solid white;
-            border-left: 20px solid transparent;
-            border-right: 20px solid transparent;
-            height: 0px;
-            width: 138px;
-            
-            z-index: 3;
-            
-            margin-right: auto;
-            margin-left: auto;
-        }
-        
-        66% {
-            position: relative;
-            top: -38px;
-            left: 0;
-            content: '';
-            border-bottom: 16px solid white;
-            border-left: 20px solid transparent;
-            border-right: 20px solid transparent;
-            height: 0px;
-            width: 138px;
-            
-            z-index: 3;
-            
-            margin-right: auto;
-            margin-left: auto;
-        }
-        
-        100% {
-            position: relative;
-            top: 0px;
-            left: 0;
-            content: '';
-            border-bottom: 0px solid white;
-            border-left: 0px solid transparent;
-            border-right: 0px solid transparent;
-            height: 0px;
-            width: 100px;
-            
-            z-index: 3;
-            
-            margin-right: auto;
-            margin-left: auto;
+            transform: perspective(1000px) rotateX(0deg);
+            transform-origin: top;
         }
     }
     
     
-    .mail-slot-x {
-        margin-right: auto;
-        margin-left: auto;
-        border-bottom: 20px solid $accentColor;
-        border-left: 25px solid transparent;
-        border-right: 25px solid transparent;
-        height: 0;
-        width: 150px;
-        
-        position: relative;
-        
-        z-index: 1;
-    }
-    
-    .mail-slot-y {
-        position: relative;
-        top: -20px;
-        content: '';
-        border: 2px solid $accentColor;
-        height: 20px;
-        width: 100px;
-        z-index: 6;
-        
-        margin-right: auto;
-        margin-left: auto;
-    }
-    
-    .mail-slot-z {
-        position: relative;
-        top: -38px;
-        content: '';
-        border-bottom: 16px solid white;
-        border-left: 20px solid transparent;
-        border-right: 20px solid transparent;
-        height: 0px;
-        width: 138px;
-        
-        z-index: 3;
-        
-        margin-right: auto;
-        margin-left: auto;
-    }
-    
-    
-    .a3-run .mail-slot-x,
-    .a3-run .mail-slot-y,
-    .a3-run .mail-slot-z {
-        display: none;
-    }
-    
-    .a3-end .mail-slot-x {
-        display: block;
-        
-        animation-name: a3-slot-x;
-        animation-duration: 3s;
-        animation-delay: 0s;
-        animation-fill-mode: forwards;
-        animation-timing-function: ease-in-out;
-        
-        width: 100px;
-        height: 0px;
-        border-bottom: 0px solid $accentColor;
-        border-left: 0px solid transparent;
-        border-right: 0px solid transparent;
-        z-index: 1;
-    }
-    
-    .a3-end .mail-slot-y {
-        display: block;
-        
-        animation-name: a3-slot-y;
-        animation-duration: 3s;
-        animation-delay: 0s;
-        animation-fill-mode: forwards;
-        animation-timing-function: ease-in-out;
-        
-        position: absolute;
-        bottom: -20px;
+    .loading-bar-container {
+        position: absolute; 
+        bottom: 0px;
+        right: 0px;
         left: 0px;
-        content: '';
-        border: 2px solid $accentColor;
-        height: 20px;
-        width: 100px;
-        z-index: 6;
+        
     }
     
-    .a3-end .mail-slot-z {
-        display: block;
-        
-        animation-name: a3-slot-z;
-        animation-duration: 3s;
-        animation-delay: 0s;
-        animation-fill-mode: forwards;
-        animation-timing-function: ease-in-out;
-        
-        position: absolute;
-        bottom: -18px;
-        left: -19px;
-        content: '';
-        border-bottom: 16px solid white;
-        border-left: 20px solid transparent;
-        border-right: 20px solid transparent;
-        height: 0px;
-        width: 138px;
-        
-        
-        
-        z-index: 3;
-    }
+    
 }
