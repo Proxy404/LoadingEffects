@@ -1,7 +1,21 @@
 .g3 {
     .letters {
-        font-size: 84px;
-        font-weight: bold;
+        font-size: 0px;
+    }
+
+    .letters-animate {
+        animation: letters-animate 3s both infinite;
+    }
+
+    @keyframes letters-animate {
+        0% {
+            font-size: 84px;
+            font-weight: bold;
+        }
+        100% {
+            font-size: 84px;
+            font-weight: bold;
+        }
     }
 
     .cover {

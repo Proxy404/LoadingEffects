@@ -3910,7 +3910,19 @@ body { width: 800px; margin-right: auto; margin-left: auto; margin-bottom: 200px
 @keyframes env { 0% { color: #000; }
   100% { color: #2196f3; } }
 
-.g3 .letters { font-size: 84px; font-weight: bold; }
+.g3 .letters { font-size: 0px; }
+
+.g3 .letters-animate { -webkit-animation: letters-animate 3s both infinite; animation: letters-animate 3s both infinite; }
+
+@-webkit-keyframes letters-animate { 0% { font-size: 84px;
+    font-weight: bold; }
+  100% { font-size: 84px;
+    font-weight: bold; } }
+
+@keyframes letters-animate { 0% { font-size: 84px;
+    font-weight: bold; }
+  100% { font-size: 84px;
+    font-weight: bold; } }
 
 .g3 .cover { font-size: 200px; background-color: #fff; width: 375px; position: absolute; top: 35px; left: 210px; }
 
@@ -3923,3 +3935,105 @@ body { width: 800px; margin-right: auto; margin-left: auto; margin-bottom: 200px
 @keyframes cover-animate { 0% { height: 70px; }
   50% { height: 0px; }
   100% { height: 70px; } }
+<<<<<<< HEAD
+=======
+
+.g4 .rolling-letters { font-size: 84px; font-weight: bold; background-color: #fff; }
+
+.g4 .ibx-env { font-size: 84px; position: absolute; top: 13px; left: 125px; }
+
+.g4 .ibx-env-animate { -webkit-animation: ibx-env-animate1 3s, ibx-env-animate2 3s; animation: ibx-env-animate1 3s, ibx-env-animate2 3s; -webkit-animation-delay: 0s, 3.5s; animation-delay: 0s, 3.5s; -webkit-animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+@-webkit-keyframes ibx-env-animate1 { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; }
+  100% { -webkit-transform: rotate(90deg); transform: rotate(90deg);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; } }
+
+@keyframes ibx-env-animate1 { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; }
+  100% { -webkit-transform: rotate(90deg); transform: rotate(90deg);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; } }
+
+@-webkit-keyframes ibx-env-animate2 { 0% { -webkit-transform: rotate(90deg); transform: rotate(90deg);
+    -webkit-transform-origin: bottom right;
+            transform-origin: bottom right; }
+  100% { -webkit-transform: rotate(180deg); transform: rotate(180deg);
+    -webkit-transform-origin: bottom right;
+            transform-origin: bottom right; } }
+
+@keyframes ibx-env-animate2 { 0% { -webkit-transform: rotate(90deg); transform: rotate(90deg);
+    -webkit-transform-origin: bottom right;
+            transform-origin: bottom right; }
+  100% { -webkit-transform: rotate(180deg); transform: rotate(180deg);
+    -webkit-transform-origin: bottom right;
+            transform-origin: bottom right; } }
+
+.g4 .ibx-env-animate3 { -webkit-animation-name: ibx-env-animate3; animation-name: ibx-env-animate3; -webkit-animation-duration: 0.4s; animation-duration: 0.4s; -webkit-animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+@-webkit-keyframes ibx-env-animate3 { 0% { -webkit-transform: rotate(0); transform: rotate(0);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; }
+  100% { -webkit-transform: rotate(90deg); transform: rotate(90deg);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; } }
+
+@keyframes ibx-env-animate3 { 0% { -webkit-transform: rotate(0); transform: rotate(0);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; }
+  100% { -webkit-transform: rotate(90deg); transform: rotate(90deg);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; } }
+
+.g4 .ibx-env-animate4 { -webkit-animation-name: ibx-env-animate4; animation-name: ibx-env-animate4; -webkit-animation-duration: 0.4s; animation-duration: 0.4s; -webkit-animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+@-webkit-keyframes ibx-env-animate4 { 0% { -webkit-transform: rotate(0); transform: rotate(0);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; }
+  100% { -webkit-transform: rotate(90deg); transform: rotate(90deg);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; } }
+
+@keyframes ibx-env-animate4 { 0% { -webkit-transform: rotate(0); transform: rotate(0);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; }
+  100% { -webkit-transform: rotate(90deg); transform: rotate(90deg);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; } }
+
+.g4 .ibx-env-animate5 { -webkit-animation-name: ibx-env-animate5; animation-name: ibx-env-animate5; -webkit-animation-duration: 0.4s; animation-duration: 0.4s; -webkit-animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+@-webkit-keyframes ibx-env-animate5 { 0% { -webkit-transform: rotate(0); transform: rotate(0);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; }
+  100% { -webkit-transform: rotate(90deg); transform: rotate(90deg);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; } }
+
+@keyframes ibx-env-animate5 { 0% { -webkit-transform: rotate(0); transform: rotate(0);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; }
+  100% { -webkit-transform: rotate(90deg); transform: rotate(90deg);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; } }
+
+.g4 .ibx-env-animate6 { -webkit-animation-name: ibx-env-animate6; animation-name: ibx-env-animate6; -webkit-animation-duration: 0.4s; animation-duration: 0.4s; -webkit-animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+@-webkit-keyframes ibx-env-animate6 { 0% { -webkit-transform: rotate(0); transform: rotate(0);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; }
+  100% { -webkit-transform: rotate(90deg); transform: rotate(90deg);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; } }
+
+@keyframes ibx-env-animate6 { 0% { -webkit-transform: rotate(0); transform: rotate(0);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; }
+  100% { -webkit-transform: rotate(90deg); transform: rotate(90deg);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; } }
+/*# sourceMappingURL=materialize.css.map */
+>>>>>>> 52c6a1ffb5ea27598ed10d20efdc3aee752512da

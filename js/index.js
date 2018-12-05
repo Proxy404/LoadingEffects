@@ -149,10 +149,26 @@ $(document).ready(function () {
         $('#g3').attr('disabled', true);
 
         $('.cover').addClass('cover-animate');
+        $('.letters').addClass('letters-animate');
         setTimeout(function () {
             $('#g3').attr('disabled', false);
+            $('.letters').removeClass('letters-animate');
             $('.cover').removeClass('cover-animate');
         }, 20000);
+    });
+
+
+    /* G4 */
+
+    $('#g4').click(function () {
+
+        $('#g4').attr('disabled', true);
+
+        $('.ibx-env').addClass('ibx-env-animate');
+        setTimeout(function () {
+            $('#g4').attr('disabled', false);
+            $('.ibx-env').removeClass('ibx-env-animate');
+        }, 10000);
     });
 
 
