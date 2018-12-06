@@ -170,6 +170,21 @@ $(document).ready(function () {
             $('.ibx-env').removeClass('ibx-env-animate');
         }, 10000);
     });
+    
+    
+    $('#a4Btn1').click(function () {
+
+        $('#a4Btn1').attr('disabled', true);
+
+        $('.a4 .ce-effect').addClass('ce-run');
+        
+        setTimeout(function () {
+            
+            $('#a4Btn1').attr('disabled', false);
+            $('.a4 .ce-effect').removeClass('ce-run');
+            
+        }, 3000);
+    });
 
 
 

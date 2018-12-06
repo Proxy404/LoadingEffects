@@ -3139,6 +3139,8 @@ body { width: 800px; margin-right: auto; margin-left: auto; margin-bottom: 200px
 
 .ce-effect { position: relative; text-align: center; margin-top: 60px; }
 
+h1 { text-align: center; }
+
 .loading-bar-container { height: 40px; }
 
 @-webkit-keyframes a1-loadBar1 { 0% { width: 0px;
@@ -4165,4 +4167,3 @@ body { width: 800px; margin-right: auto; margin-left: auto; margin-bottom: 200px
 
 @keyframes x-animate { 0% { color: transparent; }
   1%, 100% { color: #333; } }
-/*# sourceMappingURL=materialize.css.map */
