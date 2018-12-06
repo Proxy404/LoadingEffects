@@ -84,20 +84,7 @@
         left: 104px;
         bottom: 2px;
         font-size: 30px;
-        animation-delay: 2.0s;
-        animation-duration: 2.0s;
-        animation-name: env;
-        animation-fill-mode: forwards;
-    }
-
-    @keyframes env {
-        0% {
-            color: #000;
-        }
-
-        100% {
-            color: #2196f3;
-        }
+        color: #2196f3;
     }
 
     .logo-group .ibx-inbx {

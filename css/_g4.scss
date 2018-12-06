@@ -8,7 +8,6 @@
         position: absolute;
         right: 0;
         left: 0;
-
     }
 
     .rolling-letters {
@@ -28,79 +27,24 @@
         left: $startPos;
         bottom: 64px;
         line-height: 1;
-        // top: 13px;
-        // left: 125px;
-
         height: 1px;
         width: 1px;
-
-        // animation-name: container-move;
-        // animation-duration: 5s;
-        // animation-fill-mode: forwards;
     }
 
-    .env-square {
+    .g4-env-square {
         height: 58px;
         width: 89px;
         background-color: #2196f3;
         border: 4px solid #2196f3;
         z-index: 1;
+    }
+
+    .g4-env-square-animate {
         animation-name: env-roll;
         animation-duration: 5s;
         animation-fill-mode: forwards;
-
     }
 
-
-    .ibx-env-animate {
-        animation: roll 2s linear infinite;
-    }
-
-
-    // .frame {
-    //     position: fixed;
-    //     top:0px;
-    //     left:0px;
-    //     bottom:-50px;
-    //     right:0px;
-    //     animation: shake $time ease-in-out infinite;
-        // .ground {
-        //     position: absolute;
-        //     top:75%;
-        //     left:0px;
-        //     right:0px;
-        //     bottom:0px;
-        //     background-color:#656D78;
-        // }
-        // .placement {
-        //     position: absolute;
-        //     bottom:25%;
-        //     left:30%;
-        //     animation: placement-move $time linear infinite;
-        // }
-        // .square {
-        //     width:200px;
-        //     height:200px;
-        //     background-color:#BAA286;
-        //     transform-origin:200px 200px;
-        //     animation: roll $time linear infinite;
-        // }
-    // }
-
-    @keyframes container-move {
-        0% {
-            transform: rotate(0deg);
-            transform-origin: bottom right;
-        }
-        50% {
-            transform: rotate(0deg);
-            transform-origin: bottom right;
-        }
-        100% {
-            transform: rotate(90deg);
-            transform-origin: bottom right;
-        }
-    }
     @keyframes env-roll {
         0% {
             transform: rotate(0deg);
@@ -131,23 +75,14 @@
             transform-origin: bottom left;
         }
         80% {
-            // transform: translate(400%, 0%) rotate(360deg);
-            // transform-origin: left bottom;
-
             transform: translate(295px, 0%) rotate(360deg);
             transform-origin: bottom left;
         }
         80.1% {
-            // transform: translate(400%, 0%) rotate(360deg);
-            // transform-origin: left bottom;
-
             transform: translate(295px, 0%) rotate(360deg);
             transform-origin: bottom right;
         }
         100% {
-            // transform: translate(400%, 0%) rotate(360deg);
-            // transform-origin: left bottom;
-
             transform: translate(295px, 0%) rotate(450deg);
             transform-origin: bottom right;
         }
@@ -155,8 +90,12 @@
 
 
     // I
-    .i {
+    .g4-i {
         color: transparent;
+        animation-fill-mode: forwards;
+    }
+
+    .g4-i-animate {
         animation-name: i-animate;
         animation-duration: .5s;
         animation-delay: 1s;
@@ -174,8 +113,12 @@
     }
 
     // N
-    .n {
+    .g4-n {
         color: transparent;
+        animation-fill-mode: forwards;
+    }
+
+    .g4-n-animate {
         animation-name: n-animate;
         animation-duration: .5s;
         animation-delay: 2s;
@@ -193,8 +136,12 @@
     }
 
     // B
-    .b {
+    .g4-b {
         color: transparent;
+        animation-fill-mode: forwards;
+    }
+
+    .g4-b-animate {
         animation-name: b-animate;
         animation-duration: .5s;
         animation-delay: 2.8s;
@@ -212,8 +159,12 @@
     }
 
     // O
-    .o {
+    .g4-o {
         color: transparent;
+        animation-fill-mode: forwards;
+    }
+
+    .g4-o-animate {
         animation-name: o-animate;
         animation-duration: .5s;
         animation-delay: 3.9s;
@@ -231,25 +182,11 @@
     }
 
     // X
-    .x {
+    .g4-x {
         color: #fff;
         position: relative;
         top: 1px;
         z-index: 2;
-        // animation-name: x-animate;
-        // animation-duration: .5s;
-        // animation-delay: 3.5s;
-        // animation-fill-mode: forwards;
-    }
-
-    @keyframes x-animate {
-        0% {
-            color: transparent;
-        }
-
-        1%, 100% {
-            color: #333;
-        }
     }
 
 
