@@ -232,12 +232,12 @@ $(document).ready(function () {
     /* G7 */
     $('#g7-start').click(function () {
         $('#g7-start').attr('disabled', true);
-        $('.i').addClass('i-animate');
+        $('.g7-i').addClass('g7-i-animate');
     });
 
     $('#g7-reset').click(function () {
         $('#g7-start').attr('disabled', false);
-        $('.i').removeClass('i-animate');
+        $('.g7-i').removeClass('g7-i-animate');
     });
     
     

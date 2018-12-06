@@ -2936,7 +2936,16 @@ input[type=range]::-ms-thumb { border: none; height: 14px; width: 14px; border-r
 
 .tap-target-wrapper.open .tap-target-wave::before { -webkit-transform: scale(1); transform: scale(1); }
 
-.tap-target-wrapper.open .tap-target-wave::after { visibility: visible; -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite; animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite; -webkit-transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s; transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s; transition: opacity .3s, transform .3s, visibility 0s 1s; transition: opacity .3s, transform .3s, visibility 0s 1s, -webkit-transform .3s; }
+.tap-target-wrapper.open .tap-target-wave::after { visibility: visible; -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite; animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite; -webkit-transition: opacity .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s; transition: opacity .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s; transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s; transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s; }
 
 .tap-target { position: absolute; font-size: 1rem; border-radius: 50%; background-color: #ee6e73; -webkit-box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.14), 0 10px 50px 0 rgba(0, 0, 0, 0.12), 0 30px 10px -20px rgba(0, 0, 0, 0.2); box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.14), 0 10px 50px 0 rgba(0, 0, 0, 0.12), 0 30px 10px -20px rgba(0, 0, 0, 0.2); width: 100%; height: 100%; opacity: 0; -webkit-transform: scale(0); transform: scale(0); -webkit-transition: opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1), -webkit-transform 0.3s cubic-bezier(0.42, 0, 0.58, 1); transition: opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1), -webkit-transform 0.3s cubic-bezier(0.42, 0, 0.58, 1); transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1), opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1); transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1), opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1), -webkit-transform 0.3s cubic-bezier(0.42, 0, 0.58, 1); }
 
@@ -2948,7 +2957,16 @@ input[type=range]::-ms-thumb { border: none; height: 14px; width: 14px; border-r
 
 .tap-target-wave::before { -webkit-transform: scale(0); transform: scale(0); -webkit-transition: -webkit-transform .3s; transition: -webkit-transform .3s; transition: transform .3s; transition: transform .3s, -webkit-transform .3s; }
 
-.tap-target-wave::after { visibility: hidden; -webkit-transition: opacity .3s, visibility 0s, -webkit-transform .3s; transition: opacity .3s, visibility 0s, -webkit-transform .3s; transition: opacity .3s, transform .3s, visibility 0s; transition: opacity .3s, transform .3s, visibility 0s, -webkit-transform .3s; z-index: -1; }
+.tap-target-wave::after { visibility: hidden; -webkit-transition: opacity .3s,
+ visibility 0s,
+ -webkit-transform .3s; transition: opacity .3s,
+ visibility 0s,
+ -webkit-transform .3s; transition: opacity .3s,
+ transform .3s,
+ visibility 0s; transition: opacity .3s,
+ transform .3s,
+ visibility 0s,
+ -webkit-transform .3s; z-index: -1; }
 
 .tap-target-origin { top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 10002; position: absolute !important; }
 
@@ -4348,11 +4366,11 @@ h1 { text-align: center; }
 
 .g7 .logo-box { width: 1000px; margin: auto; margin-top: 150px; margin-bottom: 150px; }
 
-.g7 .i { width: 30px; height: 200px; position: absolute; top: 0px; left: 0px; background-color: transparent; }
+.g7 .g7-i { width: 30px; height: 200px; position: absolute; top: 0px; left: 0px; background-color: transparent; }
 
-.g7 .i-animate { -webkit-animation-name: i-animate; animation-name: i-animate; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+.g7 .g7-i-animate { -webkit-animation-name: g7-i-animate; animation-name: g7-i-animate; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
 
-@keyframes i-animate { 0% { width: 30px;
+@-webkit-keyframes g7-i-animate { 0% { width: 30px;
     height: 0px;
     top: 0px;
     left: 0px;
@@ -4363,22 +4381,34 @@ h1 { text-align: center; }
     left: 0px;
     background-color: #5BC0EB; } }
 
-.g7 .n { width: 150px; height: 200px; position: absolute; top: 0px; left: 60px; background-color: #404E4D; }
+@keyframes g7-i-animate { 0% { width: 30px;
+    height: 0px;
+    top: 0px;
+    left: 0px;
+    background-color: #5BC0EB; }
+  100% { width: 30px;
+    height: 200px;
+    top: 0px;
+    left: 0px;
+    background-color: #5BC0EB; } }
 
-.g7 .n-top { width: 40px; height: 100px; position: absolute; top: 0px; left: 60px; border-left: 40px solid transparent; border-top: 100px solid #364241; border-right: 0px solid transparent; }
+.g7 .g7-n { width: 150px; height: 200px; position: absolute; top: 0px; left: 60px; background-color: #404E4D; }
 
-.g7 .n-bottom { width: 40px; height: 100px; position: absolute; bottom: 0px; left: 50px; border-left: 0px solid transparent; border-bottom: 100px solid #364241; border-right: 40px solid transparent; }
+.g7 .g7-n-top { width: 40px; height: 100px; position: absolute; top: 0px; left: 60px; border-left: 40px solid transparent; border-top: 100px solid #364241; border-right: 0px solid transparent; }
 
-.g7 .b { width: 150px; height: 200px; position: absolute; top: 0px; left: 240px; }
+.g7 .g7-n-bottom { width: 40px; height: 100px; position: absolute; bottom: 0px; left: 50px; border-left: 0px solid transparent; border-bottom: 100px solid #364241; border-right: 40px solid transparent; }
 
-.g7 .b-back { width: 75px; height: 200px; position: absolute; top: 0px; left: 0px; background-color: #5BC0EB; }
+.g7 .g7-b { width: 150px; height: 200px; position: absolute; top: 0px; left: 240px; }
 
-.g7 .b-top { width: 105px; height: 105px; position: absolute; border-radius: 50%; top: 0px; left: 25px; background-color: #5BC0EB; }
+.g7 .g7-b-back { width: 75px; height: 200px; position: absolute; top: 0px; left: 0px; background-color: #5BC0EB; }
 
-.g7 .b-bottom { width: 105px; height: 105px; position: absolute; border-radius: 50%; top: 95px; left: 25px; background-color: #5BC0EB; }
+.g7 .g7-b-top { width: 105px; height: 105px; position: absolute; border-radius: 50%; top: 0px; left: 25px; background-color: #5BC0EB; }
 
-.g7 .o { width: 150px; height: 200px; border-radius: 50%; position: absolute; top: 0px; left: 420px; background-color: #9BC53D; }
+.g7 .g7-b-bottom { width: 105px; height: 105px; position: absolute; border-radius: 50%; top: 95px; left: 25px; background-color: #5BC0EB; }
 
-.g7 .top-x { width: 0px; height: 0px; border-left: 90px solid transparent; border-top: 120px solid #5BC0EB; border-right: 90px solid transparent; position: absolute; top: 0px; left: 600px; }
+.g7 .g7-o { width: 150px; height: 200px; border-radius: 50%; position: absolute; top: 0px; left: 420px; background-color: #9BC53D; }
 
-.g7 .bottom-x { width: 0px; height: 0px; border-left: 90px solid transparent; border-bottom: 120px solid #404E4D; border-right: 90px solid transparent; position: absolute; top: 80px; left: 600px; }
+.g7 .g7-top-x { width: 0px; height: 0px; border-left: 90px solid transparent; border-top: 120px solid #5BC0EB; border-right: 90px solid transparent; position: absolute; top: 0px; left: 600px; }
+
+.g7 .g7-bottom-x { width: 0px; height: 0px; border-left: 90px solid transparent; border-bottom: 120px solid #404E4D; border-right: 90px solid transparent; position: absolute; top: 80px; left: 600px; }
+/*# sourceMappingURL=materialize.css.map */
