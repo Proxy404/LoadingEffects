@@ -2936,16 +2936,7 @@ input[type=range]::-ms-thumb { border: none; height: 14px; width: 14px; border-r
 
 .tap-target-wrapper.open .tap-target-wave::before { -webkit-transform: scale(1); transform: scale(1); }
 
-.tap-target-wrapper.open .tap-target-wave::after { visibility: visible; -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite; animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite; -webkit-transition: opacity .3s,
- visibility 0s 1s,
- -webkit-transform .3s; transition: opacity .3s,
- visibility 0s 1s,
- -webkit-transform .3s; transition: opacity .3s,
- transform .3s,
- visibility 0s 1s; transition: opacity .3s,
- transform .3s,
- visibility 0s 1s,
- -webkit-transform .3s; }
+.tap-target-wrapper.open .tap-target-wave::after { visibility: visible; -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite; animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite; -webkit-transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s; transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s; transition: opacity .3s, transform .3s, visibility 0s 1s; transition: opacity .3s, transform .3s, visibility 0s 1s, -webkit-transform .3s; }
 
 .tap-target { position: absolute; font-size: 1rem; border-radius: 50%; background-color: #ee6e73; -webkit-box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.14), 0 10px 50px 0 rgba(0, 0, 0, 0.12), 0 30px 10px -20px rgba(0, 0, 0, 0.2); box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.14), 0 10px 50px 0 rgba(0, 0, 0, 0.12), 0 30px 10px -20px rgba(0, 0, 0, 0.2); width: 100%; height: 100%; opacity: 0; -webkit-transform: scale(0); transform: scale(0); -webkit-transition: opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1), -webkit-transform 0.3s cubic-bezier(0.42, 0, 0.58, 1); transition: opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1), -webkit-transform 0.3s cubic-bezier(0.42, 0, 0.58, 1); transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1), opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1); transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1), opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1), -webkit-transform 0.3s cubic-bezier(0.42, 0, 0.58, 1); }
 
@@ -2957,16 +2948,7 @@ input[type=range]::-ms-thumb { border: none; height: 14px; width: 14px; border-r
 
 .tap-target-wave::before { -webkit-transform: scale(0); transform: scale(0); -webkit-transition: -webkit-transform .3s; transition: -webkit-transform .3s; transition: transform .3s; transition: transform .3s, -webkit-transform .3s; }
 
-.tap-target-wave::after { visibility: hidden; -webkit-transition: opacity .3s,
- visibility 0s,
- -webkit-transform .3s; transition: opacity .3s,
- visibility 0s,
- -webkit-transform .3s; transition: opacity .3s,
- transform .3s,
- visibility 0s; transition: opacity .3s,
- transform .3s,
- visibility 0s,
- -webkit-transform .3s; z-index: -1; }
+.tap-target-wave::after { visibility: hidden; -webkit-transition: opacity .3s, visibility 0s, -webkit-transform .3s; transition: opacity .3s, visibility 0s, -webkit-transform .3s; transition: opacity .3s, transform .3s, visibility 0s; transition: opacity .3s, transform .3s, visibility 0s, -webkit-transform .3s; z-index: -1; }
 
 .tap-target-origin { top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 10002; position: absolute !important; }
 
@@ -3812,6 +3794,118 @@ h1 { text-align: center; }
 
 .a3 .loading-bar-container { position: absolute; bottom: 0px; right: 0px; left: 0px; }
 
+.a4 .letter-container { position: relative; font-size: 80px; font-weight: bold; line-height: 1; margin-right: auto; margin-left: auto; text-align: center; height: 80px; width: 425px; }
+
+.a4 .i, .a4 .n, .a4 .b, .a4 .o, .a4 .x, .a4 .ibx-env { float: left; width: 85px; }
+
+.a4 .ibx-env { margin-top: -5px; position: absolute; right: 85px; }
+
+.a4 .ce-run1 .i { -webkit-animation-name: shutter-up; animation-name: shutter-up; -webkit-animation-duration: 0.5s; animation-duration: 0.5s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-transform: rotateY(90deg); transform: rotateY(90deg); -webkit-transform-origin: left; transform-origin: left; }
+
+.a4 .ce-run1 .n { -webkit-animation-name: shutter-right; animation-name: shutter-right; -webkit-animation-duration: 0.5s; animation-duration: 0.5s; -webkit-animation-delay: 0.7s; animation-delay: 0.7s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-transform: rotateX(-90deg); transform: rotateX(-90deg); -webkit-transform-origin: bottom; transform-origin: bottom; }
+
+.a4 .ce-run1 .b { -webkit-animation-name: shutter-bottom; animation-name: shutter-bottom; -webkit-animation-duration: 0.5s; animation-duration: 0.5s; -webkit-animation-delay: 1.4s; animation-delay: 1.4s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-transform: rotateX(-90deg); transform: rotateX(-90deg); -webkit-transform-origin: bottom; transform-origin: bottom; }
+
+.a4 .ce-run1 .o { -webkit-animation-name: shutter-o; animation-name: shutter-o; -webkit-animation-duration: 1.5s; animation-duration: 1.5s; -webkit-animation-delay: 2.1s; animation-delay: 2.1s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-transform: rotateY(90deg); transform: rotateY(90deg); -webkit-transform-origin: left; transform-origin: left; }
+
+.a4 .ce-run1 .x { -webkit-animation-name: shutter-up; animation-name: shutter-up; -webkit-animation-duration: 0.5s; animation-duration: 0.5s; -webkit-animation-delay: 2.8s; animation-delay: 2.8s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-transform: rotateX(-90deg); transform: rotateX(-90deg); -webkit-transform-origin: bottom; transform-origin: bottom; }
+
+.a4 .ce-run1 .ibx-env { -webkit-animation-name: shutter-right; animation-name: shutter-right; -webkit-animation-duration: 0.5s; animation-duration: 0.5s; -webkit-animation-delay: 4.2s; animation-delay: 4.2s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-transform: rotateY(-90deg); transform: rotateY(-90deg); -webkit-transform-origin: right; transform-origin: right; }
+
+.a4 .ce-run2 .i { -webkit-animation-name: shutter-left; animation-name: shutter-left; -webkit-animation-duration: 0.5s; animation-duration: 0.5s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-transform: rotateY(90deg); transform: rotateY(90deg); -webkit-transform-origin: left; transform-origin: left; }
+
+.a4 .ce-run2 .n { -webkit-animation-name: shutter-left; animation-name: shutter-left; -webkit-animation-duration: 0.5s; animation-duration: 0.5s; -webkit-animation-delay: 0.7s; animation-delay: 0.7s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-transform: rotateY(90deg); transform: rotateY(90deg); -webkit-transform-origin: left; transform-origin: left; }
+
+.a4 .ce-run2 .b { -webkit-animation-name: shutter-left; animation-name: shutter-left; -webkit-animation-duration: 0.5s; animation-duration: 0.5s; -webkit-animation-delay: 1.4s; animation-delay: 1.4s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-transform: rotateY(90deg); transform: rotateY(90deg); -webkit-transform-origin: left; transform-origin: left; }
+
+.a4 .ce-run2 .o { -webkit-animation-name: shutter-o; animation-name: shutter-o; -webkit-animation-duration: 1.5s; animation-duration: 1.5s; -webkit-animation-delay: 2.1s; animation-delay: 2.1s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-transform: rotateY(90deg); transform: rotateY(90deg); -webkit-transform-origin: left; transform-origin: left; }
+
+.a4 .ce-run2 .x { -webkit-animation-name: shutter-left; animation-name: shutter-left; -webkit-animation-duration: 0.5s; animation-duration: 0.5s; -webkit-animation-delay: 2.8s; animation-delay: 2.8s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-transform: rotateY(90deg); transform: rotateY(90deg); -webkit-transform-origin: left; transform-origin: left; }
+
+.a4 .ce-run2 .ibx-env { -webkit-animation-name: shutter-left; animation-name: shutter-left; -webkit-animation-duration: 0.5s; animation-duration: 0.5s; -webkit-animation-delay: 4.2s; animation-delay: 4.2s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-transform: rotateY(90deg); transform: rotateY(90deg); -webkit-transform-origin: left; transform-origin: left; }
+
+@-webkit-keyframes shutter-up { 0% { -webkit-transform: rotateX(90deg); transform: rotateX(90deg);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom; }
+  100% { -webkit-transform: rotateX(0deg); transform: rotateX(0deg);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom; } }
+
+@keyframes shutter-up { 0% { -webkit-transform: rotateX(90deg); transform: rotateX(90deg);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom; }
+  100% { -webkit-transform: rotateX(0deg); transform: rotateX(0deg);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom; } }
+
+@-webkit-keyframes shutter-right { 0% { -webkit-transform: rotateY(-90deg); transform: rotateY(-90deg);
+    -webkit-transform-origin: right;
+            transform-origin: right; }
+  100% { -webkit-transform: rotateY(0deg); transform: rotateY(0deg);
+    -webkit-transform-origin: right;
+            transform-origin: right; } }
+
+@keyframes shutter-right { 0% { -webkit-transform: rotateY(-90deg); transform: rotateY(-90deg);
+    -webkit-transform-origin: right;
+            transform-origin: right; }
+  100% { -webkit-transform: rotateY(0deg); transform: rotateY(0deg);
+    -webkit-transform-origin: right;
+            transform-origin: right; } }
+
+@-webkit-keyframes shutter-bottom { 0% { -webkit-transform: rotateX(90deg); transform: rotateX(90deg);
+    -webkit-transform-origin: top;
+            transform-origin: top; }
+  100% { -webkit-transform: rotateX(0deg); transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+            transform-origin: top; } }
+
+@keyframes shutter-bottom { 0% { -webkit-transform: rotateX(90deg); transform: rotateX(90deg);
+    -webkit-transform-origin: top;
+            transform-origin: top; }
+  100% { -webkit-transform: rotateX(0deg); transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+            transform-origin: top; } }
+
+@-webkit-keyframes shutter-left { 0% { -webkit-transform: rotateY(90deg); transform: rotateY(90deg);
+    -webkit-transform-origin: left;
+            transform-origin: left; }
+  100% { -webkit-transform: rotateY(0deg); transform: rotateY(0deg);
+    -webkit-transform-origin: left;
+            transform-origin: left; } }
+
+@keyframes shutter-left { 0% { -webkit-transform: rotateY(90deg); transform: rotateY(90deg);
+    -webkit-transform-origin: left;
+            transform-origin: left; }
+  100% { -webkit-transform: rotateY(0deg); transform: rotateY(0deg);
+    -webkit-transform-origin: left;
+            transform-origin: left; } }
+
+@-webkit-keyframes shutter-o { 0% { -webkit-transform: rotateY(90deg); transform: rotateY(90deg);
+    -webkit-transform-origin: left;
+            transform-origin: left; }
+  33% { -webkit-transform: rotateY(0deg); transform: rotateY(0deg);
+    -webkit-transform-origin: left;
+            transform-origin: left; }
+  66% { -webkit-transform: rotateY(0deg); transform: rotateY(0deg);
+    -webkit-transform-origin: left;
+            transform-origin: left; }
+  100% { -webkit-transform: rotateY(90deg); transform: rotateY(90deg);
+    -webkit-transform-origin: left;
+            transform-origin: left; } }
+
+@keyframes shutter-o { 0% { -webkit-transform: rotateY(90deg); transform: rotateY(90deg);
+    -webkit-transform-origin: left;
+            transform-origin: left; }
+  33% { -webkit-transform: rotateY(0deg); transform: rotateY(0deg);
+    -webkit-transform-origin: left;
+            transform-origin: left; }
+  66% { -webkit-transform: rotateY(0deg); transform: rotateY(0deg);
+    -webkit-transform-origin: left;
+            transform-origin: left; }
+  100% { -webkit-transform: rotateY(90deg); transform: rotateY(90deg);
+    -webkit-transform-origin: left;
+            transform-origin: left; } }
+
 /* Garrett's Styles */
 .g1 .logo-group { width: 200px; height: 200px; margin: auto; margin-top: 150px; border-radius: 100px; }
 
@@ -4288,4 +4382,3 @@ h1 { text-align: center; }
 .g7 .top-x { width: 0px; height: 0px; border-left: 90px solid transparent; border-top: 120px solid #5BC0EB; border-right: 90px solid transparent; position: absolute; top: 0px; left: 600px; }
 
 .g7 .bottom-x { width: 0px; height: 0px; border-left: 90px solid transparent; border-bottom: 120px solid #404E4D; border-right: 90px solid transparent; position: absolute; top: 80px; left: 600px; }
-/*# sourceMappingURL=materialize.css.map */

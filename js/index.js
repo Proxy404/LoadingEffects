@@ -243,16 +243,34 @@ $(document).ready(function () {
     
     $('#a4Btn1').click(function () {
 
-        $('#a4Btn1').attr('disabled', true);
+        $('.a4 .ce-effect').removeClass('ce-run1').removeClass('ce-run2');
+        
+        $('#a4Btn1, #a4Btn2').attr('disabled', true);
 
-        $('.a4 .ce-effect').addClass('ce-run');
+        $('.a4 .ce-effect').addClass('ce-run1');
         
         setTimeout(function () {
             
-            $('#a4Btn1').attr('disabled', false);
-            $('.a4 .ce-effect').removeClass('ce-run');
+            $('#a4Btn1, #a4Btn2').attr('disabled', false);
             
-        }, 3000);
+            
+        }, 4000);
+    });
+    
+    $('#a4Btn2').click(function () {
+
+        $('.a4 .ce-effect').removeClass('ce-run1').removeClass('ce-run2');
+        
+        $('#a4Btn1, #a4Btn2').attr('disabled', true);
+
+        $('.a4 .ce-effect').addClass('ce-run2');
+        
+        setTimeout(function () {
+            
+            $('#a4Btn1, #a4Btn2').attr('disabled', false);
+            
+            
+        }, 4000);
     });
 
 
