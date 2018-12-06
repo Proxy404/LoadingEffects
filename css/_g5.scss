@@ -31,53 +31,64 @@
         width: 1px;
     }
 
-    .env-square {
+    .g5-env-square {
         height: 58px;
         width: 89px;
         // background-color: $accentColor-blue;
-        background-color: $accentColor-purple;
+        // background-color: $accentColor-purple;
+        background-color: map-get($map: $deep-purple, $key: "darken-3");
         z-index: 1;
+    }
+
+    .g5-env-square-animate {
         animation-name: env-roll;
         animation-duration: 5s;
         animation-fill-mode: forwards;
     }
 
-    .flap1 {
+    .g5-flap1 {
         position: relative;
         width: 0px;
         height: 0px;
         border-left: 44.5px solid transparent;
         // border-top: 44.5px solid $accentColor-blue;
-        border-top: 44.5px solid $accentColor-purple;
+        // border-top: 44.5px solid $accentColor-purple;
+        border-top: 44.5px solid map-get($map: $deep-purple, $key: "darken-3");
         border-right: 44.5px solid transparent;
+        z-index: 5;
+    }
+
+    .g5-flap1-animate {
         animation-name: flap-animate;
         animation-duration: 1s;
         animation-delay: 4.3s;
         animation-fill-mode: forwards;
-        z-index: 5;
     }
 
-    .flap2 {
+    .g5-flap2 {
         position: absolute;
         top: 0px;
         width: 0px;
         height: 0px;
         border-left: 44.5px solid transparent;
         // border-top: 48.5px solid map-get($map: $blue, $key: "darken-2");
-        border-top: 48.5px solid map-get($map: $deep-purple, $key: "darken-2");
+        border-top: 48.5px solid map-get($map: $deep-purple, $key: "darken-4");
         border-right: 44.5px solid transparent;
         position: absolute;
+        z-index: 2;
+    }
+
+    .g5-flap2-animate {
         animation-name: flap-animate;
         animation-duration: 1s;
         animation-delay: 4.3s;
         animation-fill-mode: forwards;
-
-        z-index: 2;
     }
 
     @keyframes flap-animate {
         0% {
-            border-top: 44.5px solid $accentColor-purple;
+            // border-top: 44.5px solid $accentColor-purple;
+            border-top: 48.5px solid map-get($map: $deep-purple, $key: "darken-3");
             border-left: 44.5px solid transparent;
             border-right: 44.5px solid transparent;
         }
@@ -152,8 +163,11 @@
 
 
     // I
-    .i {
+    .g5-i {
         color: transparent;
+    }
+
+    .g5-i-animate {
         animation-name: i-animate;
         animation-duration: .5s;
         animation-delay: 1s;
@@ -171,8 +185,11 @@
     }
 
     // N
-    .n {
+    .g5-n {
         color: transparent;
+    }
+
+    .g5-n-animate {
         animation-name: n-animate;
         animation-duration: .5s;
         animation-delay: 2s;
@@ -190,8 +207,11 @@
     }
 
     // B
-    .b {
+    .g5-b {
         color: transparent;
+    }
+
+    .g5-b-animate {
         animation-name: b-animate;
         animation-duration: .5s;
         animation-delay: 2.8s;
@@ -209,8 +229,11 @@
     }
 
     // O
-    .o {
+    .g5-o {
         color: transparent;
+    }
+
+    .g5-o-animate {
         animation-name: o-animate;
         animation-duration: .5s;
         animation-delay: 3.9s;
@@ -228,21 +251,11 @@
     }
 
     // X
-    .x {
+    .g5-x {
         color: #fff;
         position: relative;
         top: 1px;
         z-index: 2;
-    }
-
-    @keyframes x-animate {
-        0% {
-            color: transparent;
-        }
-
-        1%, 100% {
-            color: #333;
-        }
     }
 
 

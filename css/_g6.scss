@@ -1,0 +1,166 @@
+.g6 {
+    .logo-group2 {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        margin-top: 150px;
+        border-radius: 100px;
+        position: relative;
+        z-index: 2;
+        background-color: #fff;
+    }
+
+    .logo-group3 {
+        width: 220px;
+        height: 220px;
+        position: absolute;
+        top: -10px;
+        left: 290px;
+        z-index: 0;
+        border-radius: 110px;
+        background-color: #0069c0;
+    }
+
+    .logo-container-animate2 {
+        background-repeat: no-repeat;
+        animation-name: loader;
+        animation-duration: 3s;
+    }
+
+    @keyframes loader {
+        0% {
+            box-shadow: none;
+        }
+
+        10% {
+            box-shadow: 0px 0px 10px 0px #ccc;
+        }
+
+        15% {
+            box-shadow: 0px 0px 20px 0px #ccc;
+        }
+
+        40% {
+            box-shadow: 0px 0px 10px 100px #ccc;
+        }
+
+        100% {
+            box-shadow: 0px 0px 100px 50px #fff;
+        }
+    }
+
+
+    .logo-group3 {
+        width: 220px;
+        height: 220px;
+        position: absolute;
+        top: -10px;
+        left: 290px;
+        z-index: 0;
+        border-radius: 110px;
+        background-color: #fff;
+    }
+
+    .logo-container-animate3 {
+        background-repeat: no-repeat;
+        animation-name: loader-circle;
+        animation-duration: 9s;
+        animation-delay: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes loader-circle {
+        0% {
+            clip-path: polygon(50% 50%, 50% 0, 50% 0, 50% 0, 50% 0, 50% 0, 50% 0);
+            background-color: #0069c0;
+        }
+
+        6.25% {
+            clip-path: polygon(50% 50%, 50% 0, 100% 0, 100% 0, 100% 0, 100% 0, 100% 0);
+            background-color: #0069c0;
+        }
+
+        18.75% {
+            clip-path: polygon(50% 50%, 50% 0, 100% 0, 100% 100%, 100% 100%, 100% 100%, 100% 100%);
+            background-color: #0069c0;
+        }
+
+        31.25% {
+            clip-path: polygon(50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%, 0 100%, 0 100%);
+            background-color: #0069c0;
+        }
+
+        43.75% {
+            clip-path: polygon(50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%, 0 0, 0 0);
+            background-color: #0069c0;
+        }
+
+        50% {
+            clip-path: polygon(50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%, 0 0, 50% 0);
+            background-color: #0069c0;
+        }
+
+        100% {
+            clip-path: polygon(50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%, 0 0, 50% 0);
+            background-color: #0069c0;
+        }
+    }
+
+    .logo-img {
+        margin-top: 95px;
+        margin-left: 15px;
+    }
+
+    .loader-bar-container {
+        width: 200px;
+        height: 10px;
+        margin: auto;
+    }
+
+    .loader-bar {
+        height: 10px;
+        margin-top: 25px;
+    }
+
+    .loader-bar-animate {
+        animation-delay: 1.5s;
+        animation-duration: 3.0s;
+        animation-name: loader-bar;
+    }
+
+    @keyframes loader-bar {
+        0% {
+            background-color: #6ec6ff;
+            width: 0px;
+        }
+
+        90% {
+            background-color: #0069c0;
+            width: 100%;
+        }
+
+        100% {
+            background-color: transparent;
+        }
+    }
+
+
+    .logo {
+        position: absolute;
+        margin-top: 85px;
+    }
+
+    .logo-group2 .ibx-env {
+        position: absolute;
+        left: 104px;
+        bottom: 2px;
+        font-size: 30px;
+        color: #2196f3;
+    }
+
+    .logo-group2 .ibx-inbx {
+        font-size: 30px;
+        margin-left: 40px;
+    }
+}
