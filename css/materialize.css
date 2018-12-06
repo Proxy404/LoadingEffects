@@ -4234,11 +4234,11 @@ body { width: 800px; margin-right: auto; margin-left: auto; margin-bottom: 200px
 
 .g7 .logo-box { width: 1000px; margin: auto; margin-top: 150px; margin-bottom: 150px; }
 
-.g7 .i { width: 30px; height: 200px; position: absolute; top: 0px; left: 0px; background-color: transparent; }
+.g7 .g7-i { width: 30px; height: 200px; position: absolute; top: 0px; left: 0px; background-color: transparent; }
 
-.g7 .i-animate { -webkit-animation-name: i-animate; animation-name: i-animate; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+.g7 .g7-i-animate { -webkit-animation-name: g7-i-animate; animation-name: g7-i-animate; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
 
-@keyframes i-animate { 0% { width: 30px;
+@-webkit-keyframes g7-i-animate { 0% { width: 30px;
     height: 0px;
     top: 0px;
     left: 0px;
@@ -4249,23 +4249,34 @@ body { width: 800px; margin-right: auto; margin-left: auto; margin-bottom: 200px
     left: 0px;
     background-color: #5BC0EB; } }
 
-.g7 .n { width: 150px; height: 200px; position: absolute; top: 0px; left: 60px; background-color: #404E4D; }
+@keyframes g7-i-animate { 0% { width: 30px;
+    height: 0px;
+    top: 0px;
+    left: 0px;
+    background-color: #5BC0EB; }
+  100% { width: 30px;
+    height: 200px;
+    top: 0px;
+    left: 0px;
+    background-color: #5BC0EB; } }
 
-.g7 .n-top { width: 40px; height: 100px; position: absolute; top: 0px; left: 60px; border-left: 40px solid transparent; border-top: 100px solid #364241; border-right: 0px solid transparent; }
+.g7 .g7-n { width: 150px; height: 200px; position: absolute; top: 0px; left: 60px; background-color: #404E4D; }
 
-.g7 .n-bottom { width: 40px; height: 100px; position: absolute; bottom: 0px; left: 50px; border-left: 0px solid transparent; border-bottom: 100px solid #364241; border-right: 40px solid transparent; }
+.g7 .g7-n-top { width: 40px; height: 100px; position: absolute; top: 0px; left: 60px; border-left: 40px solid transparent; border-top: 100px solid #364241; border-right: 0px solid transparent; }
 
-.g7 .b { width: 150px; height: 200px; position: absolute; top: 0px; left: 240px; }
+.g7 .g7-n-bottom { width: 40px; height: 100px; position: absolute; bottom: 0px; left: 50px; border-left: 0px solid transparent; border-bottom: 100px solid #364241; border-right: 40px solid transparent; }
 
-.g7 .b-back { width: 75px; height: 200px; position: absolute; top: 0px; left: 0px; background-color: #5BC0EB; }
+.g7 .g7-b { width: 150px; height: 200px; position: absolute; top: 0px; left: 240px; }
 
-.g7 .b-top { width: 105px; height: 105px; position: absolute; border-radius: 50%; top: 0px; left: 25px; background-color: #5BC0EB; }
+.g7 .g7-b-back { width: 75px; height: 200px; position: absolute; top: 0px; left: 0px; background-color: #5BC0EB; }
 
-.g7 .b-bottom { width: 105px; height: 105px; position: absolute; border-radius: 50%; top: 95px; left: 25px; background-color: #5BC0EB; }
+.g7 .g7-b-top { width: 105px; height: 105px; position: absolute; border-radius: 50%; top: 0px; left: 25px; background-color: #5BC0EB; }
 
-.g7 .o { width: 150px; height: 200px; border-radius: 50%; position: absolute; top: 0px; left: 420px; background-color: #9BC53D; }
+.g7 .g7-b-bottom { width: 105px; height: 105px; position: absolute; border-radius: 50%; top: 95px; left: 25px; background-color: #5BC0EB; }
 
-.g7 .top-x { width: 0px; height: 0px; border-left: 90px solid transparent; border-top: 120px solid #5BC0EB; border-right: 90px solid transparent; position: absolute; top: 0px; left: 600px; }
+.g7 .g7-o { width: 150px; height: 200px; border-radius: 50%; position: absolute; top: 0px; left: 420px; background-color: #9BC53D; }
 
-.g7 .bottom-x { width: 0px; height: 0px; border-left: 90px solid transparent; border-bottom: 120px solid #404E4D; border-right: 90px solid transparent; position: absolute; top: 80px; left: 600px; }
+.g7 .g7-top-x { width: 0px; height: 0px; border-left: 90px solid transparent; border-top: 120px solid #5BC0EB; border-right: 90px solid transparent; position: absolute; top: 0px; left: 600px; }
+
+.g7 .g7-bottom-x { width: 0px; height: 0px; border-left: 90px solid transparent; border-bottom: 120px solid #404E4D; border-right: 90px solid transparent; position: absolute; top: 80px; left: 600px; }
 /*# sourceMappingURL=materialize.css.map */
