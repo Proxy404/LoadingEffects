@@ -4279,4 +4279,94 @@ body { width: 800px; margin-right: auto; margin-left: auto; margin-bottom: 200px
 .g7 .g7-top-x { width: 0px; height: 0px; border-left: 90px solid transparent; border-top: 120px solid #5BC0EB; border-right: 90px solid transparent; position: absolute; top: 0px; left: 600px; }
 
 .g7 .g7-bottom-x { width: 0px; height: 0px; border-left: 90px solid transparent; border-bottom: 120px solid #404E4D; border-right: 90px solid transparent; position: absolute; top: 80px; left: 600px; }
+
+.g8 .face { width: 100%; height: 500px; background-color: #FDE74C; }
+
+.g8 .left-eye { width: 200px; height: 200px; position: absolute; left: 50px; background-color: #404E4D; -webkit-clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%); clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%); }
+
+.g8 .left-eye-animate { -webkit-animation-name: left-eye; animation-name: left-eye; -webkit-animation-duration: 4.5s; animation-duration: 4.5s; -webkit-animation-delay: .25s; animation-delay: .25s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+@-webkit-keyframes left-eye { 0% { -webkit-clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%); clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%); }
+  80% { -webkit-clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%); clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%); }
+  100% { -webkit-clip-path: polygon(20% 40%, 80% 40%, 80% 60%, 20% 60%); clip-path: polygon(20% 40%, 80% 40%, 80% 60%, 20% 60%); } }
+
+@keyframes left-eye { 0% { -webkit-clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%); clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%); }
+  80% { -webkit-clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%); clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%); }
+  100% { -webkit-clip-path: polygon(20% 40%, 80% 40%, 80% 60%, 20% 60%); clip-path: polygon(20% 40%, 80% 40%, 80% 60%, 20% 60%); } }
+
+.g8 .right-eye { width: 200px; height: 200px; position: absolute; right: 50px; background-color: #404E4D; -webkit-clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%); clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%); }
+
+.g8 .right-eye-animate { -webkit-animation-name: right-eye; animation-name: right-eye; -webkit-animation-duration: 4.5s; animation-duration: 4.5s; -webkit-animation-delay: .25s; animation-delay: .25s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+@-webkit-keyframes right-eye { 0% { -webkit-clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%); clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%); }
+  80% { -webkit-clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%); clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%); }
+  100% { -webkit-clip-path: polygon(20% 40%, 80% 40%, 80% 60%, 20% 60%); clip-path: polygon(20% 40%, 80% 40%, 80% 60%, 20% 60%); } }
+
+@keyframes right-eye { 0% { -webkit-clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%); clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%); }
+  80% { -webkit-clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%); clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%); }
+  100% { -webkit-clip-path: polygon(20% 40%, 80% 40%, 80% 60%, 20% 60%); clip-path: polygon(20% 40%, 80% 40%, 80% 60%, 20% 60%); } }
+
+.g8 .mouth { width: 200px; height: 200px; position: absolute; bottom: 0px; left: 300px; background-color: #404E4D; -webkit-clip-path: polygon(25% 47%, 75% 47%, 75% 53%, 25% 53%); clip-path: polygon(25% 47%, 75% 47%, 75% 53%, 25% 53%); }
+
+.g8 .mouth-animate { -webkit-animation-name: mouth; animation-name: mouth; -webkit-animation-duration: 4.5s; animation-duration: 4.5s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-iteration-count: 2; animation-iteration-count: 2; }
+
+@-webkit-keyframes mouth { 0% { -webkit-clip-path: polygon(25% 47%, 75% 47%, 75% 53%, 25% 53%); clip-path: polygon(25% 47%, 75% 47%, 75% 53%, 25% 53%);
+    bottom: 0px; }
+  30% { -webkit-clip-path: polygon(25% 42%, 75% 42%, 75% 53%, 25% 53%); clip-path: polygon(25% 42%, 75% 42%, 75% 53%, 25% 53%);
+    bottom: 15px; }
+  60% { -webkit-clip-path: polygon(0% 47%, 75% 47%, 75% 53%, 0% 53%); clip-path: polygon(0% 47%, 75% 47%, 75% 53%, 0% 53%);
+    bottom: 0px; }
+  100% { -webkit-clip-path: polygon(0% 40%, 100% 40%, 100% 60%, 0% 60%); clip-path: polygon(0% 40%, 100% 40%, 100% 60%, 0% 60%);
+    bottom: 0px; } }
+
+@keyframes mouth { 0% { -webkit-clip-path: polygon(25% 47%, 75% 47%, 75% 53%, 25% 53%); clip-path: polygon(25% 47%, 75% 47%, 75% 53%, 25% 53%);
+    bottom: 0px; }
+  30% { -webkit-clip-path: polygon(25% 42%, 75% 42%, 75% 53%, 25% 53%); clip-path: polygon(25% 42%, 75% 42%, 75% 53%, 25% 53%);
+    bottom: 15px; }
+  60% { -webkit-clip-path: polygon(0% 47%, 75% 47%, 75% 53%, 0% 53%); clip-path: polygon(0% 47%, 75% 47%, 75% 53%, 0% 53%);
+    bottom: 0px; }
+  100% { -webkit-clip-path: polygon(0% 40%, 100% 40%, 100% 60%, 0% 60%); clip-path: polygon(0% 40%, 100% 40%, 100% 60%, 0% 60%);
+    bottom: 0px; } }
+
+.g8 .pillow { width: 0px; height: 0px; position: absolute; background-color: #404E4D; }
+
+.g8 .pillow-animate { -webkit-animation-name: pillow; animation-name: pillow; -webkit-animation-duration: 2s; animation-duration: 2s; -webkit-animation-delay: 2.5s; animation-delay: 2.5s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: linear; animation-timing-function: linear; position: absolute; }
+
+@-webkit-keyframes pillow { 0% { height: 500px;
+    width: 1000px;
+    top: 0px;
+    left: 0px; }
+  50% { height: 100px;
+    width: 200px;
+    top: 200px;
+    left: 200px;
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg); }
+  60% { top: 200px;
+    left: 200px; }
+  95% { height: 100px;
+    width: 200px;
+    top: 500px;
+    left: 200px;
+    background-color: #404E4D; }
+  100% { background-color: transparent; } }
+
+@keyframes pillow { 0% { height: 500px;
+    width: 1000px;
+    top: 0px;
+    left: 0px; }
+  50% { height: 100px;
+    width: 200px;
+    top: 200px;
+    left: 200px;
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg); }
+  60% { top: 200px;
+    left: 200px; }
+  95% { height: 100px;
+    width: 200px;
+    top: 500px;
+    left: 200px;
+    background-color: #404E4D; }
+  100% { background-color: transparent; } }
 /*# sourceMappingURL=materialize.css.map */
