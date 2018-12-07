@@ -1,0 +1,158 @@
+.g8 {
+
+    .face {
+        width: 100%;
+        height: 500px;
+        background-color: #FDE74C;
+    }
+
+    .left-eye {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 50px;
+        background-color: #404E4D;
+        clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%);
+    }
+
+    .left-eye-animate {
+        animation-name: left-eye;
+        animation-duration: 4.5s;
+        animation-delay: .25s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes left-eye {
+        0% {
+            clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%);
+        }
+
+        80% {
+            clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%);
+        }
+
+        100% {
+            clip-path: polygon(20% 40%, 80% 40%, 80% 60%, 20% 60%);
+        }
+    }
+
+    .right-eye {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        right: 50px;
+        background-color: #404E4D;
+        clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%);
+    }
+
+    .right-eye-animate {
+        animation-name: right-eye;
+        animation-duration: 4.5s;
+        animation-delay: .25s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes right-eye {
+        0% {
+            clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%);
+        }
+
+        80% {
+            clip-path: polygon(0% 47%, 100% 47%, 100% 53%, 0% 53%);
+        }
+
+        100% {
+            clip-path: polygon(20% 40%, 80% 40%, 80% 60%, 20% 60%);
+        }
+    }
+
+    .mouth {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        bottom: 0px;
+        left: 300px;
+        background-color: #404E4D;
+        clip-path: polygon(25% 47%, 75% 47%, 75% 53%, 25% 53%);
+    }
+
+    .mouth-animate {
+        animation-name: mouth;
+        animation-duration: 4.5s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 2;
+    }
+
+    @keyframes mouth {
+        0% {
+            clip-path: polygon(25% 47%, 75% 47%, 75% 53%, 25% 53%);
+            bottom: 0px;
+        }
+
+        30% {
+            clip-path: polygon(25% 42%, 75% 42%, 75% 53%, 25% 53%);
+            bottom: 15px;
+        }
+
+        60% {
+            clip-path: polygon(0% 47%, 75% 47%, 75% 53%, 0% 53%);
+            bottom: 0px;
+        }
+
+        100% {
+            clip-path: polygon(0% 40%, 100% 40%, 100% 60%, 0% 60%);
+            bottom: 0px;
+        }
+    }
+
+    // Pillow
+    .pillow {
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        background-color: #404E4D;
+    }
+
+    .pillow-animate {
+        animation-name: pillow;
+        animation-duration: 2s;
+        animation-delay: 2.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+        position: absolute;
+    }
+
+    @keyframes pillow {
+        0% {
+            height: 500px;
+            width: 1000px;
+            top: 0px;
+            left: 0px;
+        }
+
+        50% {
+            height: 100px;
+            width: 200px;
+            top: 200px;
+            left: 200px;
+            transform: rotate(10deg);
+        }
+
+        60% {
+            top: 200px;
+            left: 200px;
+        }
+
+        95% {
+            height: 100px;
+            width: 200px;
+            top: 500px;
+            left: 200px;
+            background-color: #404E4D;
+        }
+
+        100% {
+            background-color: transparent;
+        }
+    }
+}

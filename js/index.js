@@ -280,6 +280,28 @@ $(document).ready(function () {
     
 
 
+    /* G8 */
+    $('#g8-start').click(function () {
+        $('#g8-start').attr('disabled', true);
+        $('.left-eye').addClass('left-eye-animate');
+        $('.right-eye').addClass('right-eye-animate');
+
+        $('.mouth').addClass('mouth-animate');
+
+        $('.pillow').addClass('pillow-animate');
+    });
+
+    $('#g8-reset').click(function () {
+        $('#g8-start').attr('disabled', false);
+        $('.left-eye').removeClass('left-eye-animate');
+        $('.right-eye').removeClass('right-eye-animate');
+
+        $('.mouth').removeClass('mouth-animate');
+
+        $('.pillow').removeClass('pillow-animate');
+    });
+
+
 
 });
 
