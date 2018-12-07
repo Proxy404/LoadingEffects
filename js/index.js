@@ -137,7 +137,7 @@ $(document).ready(function () {
 
             // $('.a3 .envelope').removeClass('envelope-animate');
 
-        }, 3000);
+        }, 4000);
     });
 
 
@@ -238,6 +238,39 @@ $(document).ready(function () {
     $('#g7-reset').click(function () {
         $('#g7-start').attr('disabled', false);
         $('.g7-i').removeClass('g7-i-animate');
+    });
+    
+    
+    $('#a4Btn1').click(function () {
+
+        $('.a4 .ce-effect').removeClass('ce-run1').removeClass('ce-run2');
+        
+        $('#a4Btn1, #a4Btn2').attr('disabled', true);
+
+        $('.a4 .ce-effect').addClass('ce-run1');
+        
+        setTimeout(function () {
+            
+            $('#a4Btn1, #a4Btn2').attr('disabled', false);
+            
+            
+        }, 4000);
+    });
+    
+    $('#a4Btn2').click(function () {
+
+        $('.a4 .ce-effect').removeClass('ce-run1').removeClass('ce-run2');
+        
+        $('#a4Btn1, #a4Btn2').attr('disabled', true);
+
+        $('.a4 .ce-effect').addClass('ce-run2');
+        
+        setTimeout(function () {
+            
+            $('#a4Btn1, #a4Btn2').attr('disabled', false);
+            
+            
+        }, 4000);
     });
 
 

@@ -3139,16 +3139,18 @@ body { width: 800px; margin-right: auto; margin-left: auto; margin-bottom: 200px
 
 .ce-effect { position: relative; text-align: center; margin-top: 60px; }
 
-.loading-bar-container { height: 40px; }
+h1 { text-align: center; }
+
+.loading-bar-container { height: 40px; width: 200px; margin-right: auto; margin-left: auto; }
 
 @-webkit-keyframes a1-loadBar1 { 0% { width: 0px;
     left: 0px;
     z-index: 8; }
-  25% { width: 200px;
+  25% { width: 100%;
     left: 0px;
     z-index: 8; }
   50% { width: 0px;
-    left: 200px;
+    left: 100%;
     z-index: 1; }
   75% { width: 0px;
     left: 0px;
@@ -3160,11 +3162,11 @@ body { width: 800px; margin-right: auto; margin-left: auto; margin-bottom: 200px
 @keyframes a1-loadBar1 { 0% { width: 0px;
     left: 0px;
     z-index: 8; }
-  25% { width: 200px;
+  25% { width: 100%;
     left: 0px;
     z-index: 8; }
   50% { width: 0px;
-    left: 200px;
+    left: 100%;
     z-index: 1; }
   75% { width: 0px;
     left: 0px;
@@ -3179,11 +3181,11 @@ body { width: 800px; margin-right: auto; margin-left: auto; margin-bottom: 200px
   25% { width: 0px;
     left: 0px;
     z-index: 8; }
-  50% { width: 200px;
+  50% { width: 100%;
     left: 0;
     z-index: 8; }
   75% { width: 0px;
-    left: 200px;
+    left: 100%;
     z-index: 8; }
   100% { width: 0px;
     left: 0px;
@@ -3195,11 +3197,11 @@ body { width: 800px; margin-right: auto; margin-left: auto; margin-bottom: 200px
   25% { width: 0px;
     left: 0px;
     z-index: 8; }
-  50% { width: 200px;
+  50% { width: 100%;
     left: 0;
     z-index: 8; }
   75% { width: 0px;
-    left: 200px;
+    left: 100%;
     z-index: 8; }
   100% { width: 0px;
     left: 0px;
@@ -3214,11 +3216,11 @@ body { width: 800px; margin-right: auto; margin-left: auto; margin-bottom: 200px
   50% { width: 0px;
     left: 0px;
     z-index: 8; }
-  75% { width: 200px;
+  75% { width: 100%;
     left: 0;
     z-index: 8; }
   100% { width: 0px;
-    left: 200px;
+    left: 100%;
     z-index: 8; } }
 
 @keyframes a1-loadBar3 { 0% { width: 0px;
@@ -3230,51 +3232,51 @@ body { width: 800px; margin-right: auto; margin-left: auto; margin-bottom: 200px
   50% { width: 0px;
     left: 0px;
     z-index: 8; }
-  75% { width: 200px;
+  75% { width: 100%;
     left: 0;
     z-index: 8; }
   100% { width: 0px;
-    left: 200px;
+    left: 100%;
     z-index: 8; } }
 
 @-webkit-keyframes a1-loadBackground { 0% { opacity: 1;
-    width: 200px;
+    width: 100%;
     left: 0px;
     background-color: transparent;
     z-index: 1; }
   50% { opacity: 1;
-    width: 200px;
+    width: 100%h;
     left: 0px;
     background-color: transparent;
     z-index: 1; }
   75% { opacity: 1;
-    width: 200px;
+    width: 100%;
     left: 0px;
     background-color: #388E3C;
     z-index: 1; }
   100% { opacity: 1;
-    width: 200px;
+    width: 100%;
     left: 0px;
     background-color: #388E3C;
     z-index: 1; } }
 
 @keyframes a1-loadBackground { 0% { opacity: 1;
-    width: 200px;
+    width: 100%;
     left: 0px;
     background-color: transparent;
     z-index: 1; }
   50% { opacity: 1;
-    width: 200px;
+    width: 100%h;
     left: 0px;
     background-color: transparent;
     z-index: 1; }
   75% { opacity: 1;
-    width: 200px;
+    width: 100%;
     left: 0px;
     background-color: #388E3C;
     z-index: 1; }
   100% { opacity: 1;
-    width: 200px;
+    width: 100%;
     left: 0px;
     background-color: #388E3C;
     z-index: 1; } }
@@ -3289,13 +3291,13 @@ body { width: 800px; margin-right: auto; margin-left: auto; margin-bottom: 200px
 
 .bar3 { background-color: #7b1fa2; display: none; }
 
-.ce-run .loading-bars { -webkit-animation-name: a1-loadBackground; animation-name: a1-loadBackground; -webkit-animation-duration: 4s; animation-duration: 4s; -webkit-animation-delay: 2s; animation-delay: 2s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+.ce-run .loading-bars { -webkit-animation-name: a1-loadBackground; animation-name: a1-loadBackground; -webkit-animation-duration: 4s; animation-duration: 4s; -webkit-animation-delay: 3s; animation-delay: 3s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
 
-.ce-run .bar1 { -webkit-animation-name: a1-loadBar1; animation-name: a1-loadBar1; -webkit-animation-duration: 4s; animation-duration: 4s; -webkit-animation-delay: 2s; animation-delay: 2s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; display: block; }
+.ce-run .bar1 { -webkit-animation-name: a1-loadBar1; animation-name: a1-loadBar1; -webkit-animation-duration: 4s; animation-duration: 4s; -webkit-animation-delay: 3s; animation-delay: 3s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; display: block; }
 
-.ce-run .bar2 { -webkit-animation-name: a1-loadBar2; animation-name: a1-loadBar2; -webkit-animation-duration: 4s; animation-duration: 4s; -webkit-animation-delay: 2s; animation-delay: 2s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; display: block; }
+.ce-run .bar2 { -webkit-animation-name: a1-loadBar2; animation-name: a1-loadBar2; -webkit-animation-duration: 4s; animation-duration: 4s; -webkit-animation-delay: 3s; animation-delay: 3s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; display: block; }
 
-.ce-run .bar3 { -webkit-animation-name: a1-loadBar3; animation-name: a1-loadBar3; -webkit-animation-duration: 4s; animation-duration: 4s; -webkit-animation-delay: 2s; animation-delay: 2s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; display: block; }
+.ce-run .bar3 { -webkit-animation-name: a1-loadBar3; animation-name: a1-loadBar3; -webkit-animation-duration: 4s; animation-duration: 4s; -webkit-animation-delay: 3s; animation-delay: 3s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; display: block; }
 
 /* Inbox Loading Effect */
 .a1 .ibx { position: relative; width: 200px; height: 50px; margin-right: auto; margin-left: auto; font-size: 50px; }
@@ -3790,7 +3792,131 @@ body { width: 800px; margin-right: auto; margin-left: auto; margin-bottom: 200px
     -webkit-transform-origin: top;
             transform-origin: top; } }
 
-.a3 .loading-bar-container { position: absolute; bottom: 0px; right: 0px; left: 0px; }
+.a3 .loading-bar-container { position: absolute; bottom: 0px; right: 0px; left: 6px; width: 210px; }
+
+.a3 .loading-bars { position: relative; width: 210px; margin-top: 30px; margin-right: auto; margin-left: auto; height: 10px; opacity: 0; }
+
+.a3 .loading-bar { position: absolute; content: ""; height: 10px; width: 210px; top: 0px; left: 0px; }
+
+.a3 .ce-run .loading-bars { -webkit-animation-name: a1-loadBackground; animation-name: a1-loadBackground; -webkit-animation-duration: 4s; animation-duration: 4s; -webkit-animation-delay: 3s; animation-delay: 3s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+.a3 .ce-run .bar1 { -webkit-animation-name: a1-loadBar1; animation-name: a1-loadBar1; -webkit-animation-duration: 4s; animation-duration: 4s; -webkit-animation-delay: 3s; animation-delay: 3s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; display: block; }
+
+.a3 .ce-run .bar2 { -webkit-animation-name: a1-loadBar2; animation-name: a1-loadBar2; -webkit-animation-duration: 4s; animation-duration: 4s; -webkit-animation-delay: 3s; animation-delay: 3s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; display: block; }
+
+.a3 .ce-run .bar3 { -webkit-animation-name: a1-loadBar3; animation-name: a1-loadBar3; -webkit-animation-duration: 4s; animation-duration: 4s; -webkit-animation-delay: 3s; animation-delay: 3s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; display: block; }
+
+.a4 .letter-container { position: relative; font-size: 80px; font-weight: bold; line-height: 1; margin-right: auto; margin-left: auto; text-align: center; height: 80px; width: 425px; }
+
+.a4 .i, .a4 .n, .a4 .b, .a4 .o, .a4 .x, .a4 .ibx-env { float: left; width: 85px; }
+
+.a4 .ibx-env { margin-top: -5px; position: absolute; right: 85px; }
+
+.a4 .ce-run1 .i { -webkit-animation-name: shutter-up; animation-name: shutter-up; -webkit-animation-duration: 0.5s; animation-duration: 0.5s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-transform: rotateY(90deg); transform: rotateY(90deg); -webkit-transform-origin: left; transform-origin: left; }
+
+.a4 .ce-run1 .n { -webkit-animation-name: shutter-right; animation-name: shutter-right; -webkit-animation-duration: 0.5s; animation-duration: 0.5s; -webkit-animation-delay: 0.7s; animation-delay: 0.7s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-transform: rotateX(-90deg); transform: rotateX(-90deg); -webkit-transform-origin: bottom; transform-origin: bottom; }
+
+.a4 .ce-run1 .b { -webkit-animation-name: shutter-bottom; animation-name: shutter-bottom; -webkit-animation-duration: 0.5s; animation-duration: 0.5s; -webkit-animation-delay: 1.4s; animation-delay: 1.4s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-transform: rotateX(-90deg); transform: rotateX(-90deg); -webkit-transform-origin: bottom; transform-origin: bottom; }
+
+.a4 .ce-run1 .o { -webkit-animation-name: shutter-o; animation-name: shutter-o; -webkit-animation-duration: 1.5s; animation-duration: 1.5s; -webkit-animation-delay: 2.1s; animation-delay: 2.1s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-transform: rotateY(90deg); transform: rotateY(90deg); -webkit-transform-origin: left; transform-origin: left; }
+
+.a4 .ce-run1 .x { -webkit-animation-name: shutter-up; animation-name: shutter-up; -webkit-animation-duration: 0.5s; animation-duration: 0.5s; -webkit-animation-delay: 2.8s; animation-delay: 2.8s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-transform: rotateX(-90deg); transform: rotateX(-90deg); -webkit-transform-origin: bottom; transform-origin: bottom; }
+
+.a4 .ce-run1 .ibx-env { -webkit-animation-name: shutter-right; animation-name: shutter-right; -webkit-animation-duration: 0.5s; animation-duration: 0.5s; -webkit-animation-delay: 4.2s; animation-delay: 4.2s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-transform: rotateY(-90deg); transform: rotateY(-90deg); -webkit-transform-origin: right; transform-origin: right; }
+
+.a4 .ce-run2 .i { -webkit-animation-name: shutter-left; animation-name: shutter-left; -webkit-animation-duration: 0.5s; animation-duration: 0.5s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-transform: rotateY(90deg); transform: rotateY(90deg); -webkit-transform-origin: left; transform-origin: left; }
+
+.a4 .ce-run2 .n { -webkit-animation-name: shutter-left; animation-name: shutter-left; -webkit-animation-duration: 0.5s; animation-duration: 0.5s; -webkit-animation-delay: 0.7s; animation-delay: 0.7s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-transform: rotateY(90deg); transform: rotateY(90deg); -webkit-transform-origin: left; transform-origin: left; }
+
+.a4 .ce-run2 .b { -webkit-animation-name: shutter-left; animation-name: shutter-left; -webkit-animation-duration: 0.5s; animation-duration: 0.5s; -webkit-animation-delay: 1.4s; animation-delay: 1.4s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-transform: rotateY(90deg); transform: rotateY(90deg); -webkit-transform-origin: left; transform-origin: left; }
+
+.a4 .ce-run2 .o { -webkit-animation-name: shutter-o; animation-name: shutter-o; -webkit-animation-duration: 1.5s; animation-duration: 1.5s; -webkit-animation-delay: 2.1s; animation-delay: 2.1s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-transform: rotateY(90deg); transform: rotateY(90deg); -webkit-transform-origin: left; transform-origin: left; }
+
+.a4 .ce-run2 .x { -webkit-animation-name: shutter-left; animation-name: shutter-left; -webkit-animation-duration: 0.5s; animation-duration: 0.5s; -webkit-animation-delay: 2.8s; animation-delay: 2.8s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-transform: rotateY(90deg); transform: rotateY(90deg); -webkit-transform-origin: left; transform-origin: left; }
+
+.a4 .ce-run2 .ibx-env { -webkit-animation-name: shutter-left; animation-name: shutter-left; -webkit-animation-duration: 0.5s; animation-duration: 0.5s; -webkit-animation-delay: 4.2s; animation-delay: 4.2s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-transform: rotateY(90deg); transform: rotateY(90deg); -webkit-transform-origin: left; transform-origin: left; }
+
+@-webkit-keyframes shutter-up { 0% { -webkit-transform: rotateX(90deg); transform: rotateX(90deg);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom; }
+  100% { -webkit-transform: rotateX(0deg); transform: rotateX(0deg);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom; } }
+
+@keyframes shutter-up { 0% { -webkit-transform: rotateX(90deg); transform: rotateX(90deg);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom; }
+  100% { -webkit-transform: rotateX(0deg); transform: rotateX(0deg);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom; } }
+
+@-webkit-keyframes shutter-right { 0% { -webkit-transform: rotateY(-90deg); transform: rotateY(-90deg);
+    -webkit-transform-origin: right;
+            transform-origin: right; }
+  100% { -webkit-transform: rotateY(0deg); transform: rotateY(0deg);
+    -webkit-transform-origin: right;
+            transform-origin: right; } }
+
+@keyframes shutter-right { 0% { -webkit-transform: rotateY(-90deg); transform: rotateY(-90deg);
+    -webkit-transform-origin: right;
+            transform-origin: right; }
+  100% { -webkit-transform: rotateY(0deg); transform: rotateY(0deg);
+    -webkit-transform-origin: right;
+            transform-origin: right; } }
+
+@-webkit-keyframes shutter-bottom { 0% { -webkit-transform: rotateX(90deg); transform: rotateX(90deg);
+    -webkit-transform-origin: top;
+            transform-origin: top; }
+  100% { -webkit-transform: rotateX(0deg); transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+            transform-origin: top; } }
+
+@keyframes shutter-bottom { 0% { -webkit-transform: rotateX(90deg); transform: rotateX(90deg);
+    -webkit-transform-origin: top;
+            transform-origin: top; }
+  100% { -webkit-transform: rotateX(0deg); transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+            transform-origin: top; } }
+
+@-webkit-keyframes shutter-left { 0% { -webkit-transform: rotateY(90deg); transform: rotateY(90deg);
+    -webkit-transform-origin: left;
+            transform-origin: left; }
+  100% { -webkit-transform: rotateY(0deg); transform: rotateY(0deg);
+    -webkit-transform-origin: left;
+            transform-origin: left; } }
+
+@keyframes shutter-left { 0% { -webkit-transform: rotateY(90deg); transform: rotateY(90deg);
+    -webkit-transform-origin: left;
+            transform-origin: left; }
+  100% { -webkit-transform: rotateY(0deg); transform: rotateY(0deg);
+    -webkit-transform-origin: left;
+            transform-origin: left; } }
+
+@-webkit-keyframes shutter-o { 0% { -webkit-transform: rotateY(90deg); transform: rotateY(90deg);
+    -webkit-transform-origin: left;
+            transform-origin: left; }
+  33% { -webkit-transform: rotateY(0deg); transform: rotateY(0deg);
+    -webkit-transform-origin: left;
+            transform-origin: left; }
+  66% { -webkit-transform: rotateY(0deg); transform: rotateY(0deg);
+    -webkit-transform-origin: left;
+            transform-origin: left; }
+  100% { -webkit-transform: rotateY(90deg); transform: rotateY(90deg);
+    -webkit-transform-origin: left;
+            transform-origin: left; } }
+
+@keyframes shutter-o { 0% { -webkit-transform: rotateY(90deg); transform: rotateY(90deg);
+    -webkit-transform-origin: left;
+            transform-origin: left; }
+  33% { -webkit-transform: rotateY(0deg); transform: rotateY(0deg);
+    -webkit-transform-origin: left;
+            transform-origin: left; }
+  66% { -webkit-transform: rotateY(0deg); transform: rotateY(0deg);
+    -webkit-transform-origin: left;
+            transform-origin: left; }
+  100% { -webkit-transform: rotateY(90deg); transform: rotateY(90deg);
+    -webkit-transform-origin: left;
+            transform-origin: left; } }
 
 /* Garrett's Styles */
 .g1 .logo-group { width: 200px; height: 200px; margin: auto; margin-top: 150px; border-radius: 100px; }
