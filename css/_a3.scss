@@ -1,6 +1,11 @@
 /* Inbox Loading Effect */
 .a3 {
     
+    $a3-loadBarWidth: 210px;
+    $a3-loadBarDuration: 4s;
+    $a3-loadBarDelay: 3s;
+    
+    
     .ce-effect {
         position: relative;
         height: 300px;
@@ -104,13 +109,68 @@
     }
     
     
+    
+    
     .loading-bar-container {
         position: absolute; 
         bottom: 0px;
         right: 0px;
-        left: 0px;
+        left: 6px;
+        
+        width: $a3-loadBarWidth;
         
     }
     
+    .loading-bars {
+        position: relative;
+        width: $a3-loadBarWidth;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 10px;
+        opacity: 0;
+
+    }
+
+    .loading-bar {
+        position: absolute;
+        content: "";
+        height: 10px;
+        width: $a3-loadBarWidth;
+        top: 0px;
+        left: 0px;
+    }
+    
+    .ce-run .loading-bars {
+    animation-name: a1-loadBackground;
+    animation-duration: $a3-loadBarDuration;
+    animation-delay: $a3-loadBarDelay;
+    animation-fill-mode: forwards;
+    }
+
+    .ce-run .bar1 {
+    animation-name: a1-loadBar1;
+    animation-duration: $a3-loadBarDuration;
+    animation-delay: $a3-loadBarDelay;
+    animation-iteration-count: infinite;
+    display: block;
+    }
+
+    .ce-run .bar2 {
+    animation-name: a1-loadBar2;
+    animation-duration: $a3-loadBarDuration;
+    animation-delay: $a3-loadBarDelay;
+    animation-iteration-count: infinite;
+    display: block;
+    }
+
+    .ce-run .bar3 {
+    animation-name: a1-loadBar3;
+    animation-duration: $a3-loadBarDuration;
+    animation-delay: $a3-loadBarDelay;
+    animation-iteration-count: infinite;
+    display: block;
+    }
+
     
 }

@@ -137,7 +137,7 @@ $(document).ready(function () {
 
             // $('.a3 .envelope').removeClass('envelope-animate');
 
-        }, 3000);
+        }, 4000);
     });
 
 

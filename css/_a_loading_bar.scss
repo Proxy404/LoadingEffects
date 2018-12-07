@@ -1,7 +1,12 @@
 $loadBarWidth: 200px;
+$loadBarDuration: 4s;
+$loadBarDelay: 3s;
 
 .loading-bar-container {
     height: 40px;
+    width: $loadBarWidth;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 @keyframes a1-loadBar1 {
@@ -12,14 +17,14 @@ $loadBarWidth: 200px;
     }
     
     25% {
-        width: $loadBarWidth;
+        width: 100%;
         left: 0px;
         z-index: 8;
     }
     
     50% {
         width: 0px;
-        left: $loadBarWidth;
+        left: 100%;
         z-index: 1;
     }
     
@@ -50,14 +55,14 @@ $loadBarWidth: 200px;
     }
     
     50% {
-        width: $loadBarWidth;
+        width: 100%;
         left: 0;
         z-index: 8;
     }
     
     75% {
         width: 0px;
-        left: $loadBarWidth;
+        left: 100%;
         z-index: 8;
     }
     
@@ -88,14 +93,14 @@ $loadBarWidth: 200px;
     }
     
     75% {
-        width: $loadBarWidth;
+        width: 100%;
         left: 0;
         z-index: 8;
     }
     
     100% {
         width: 0px;
-        left: $loadBarWidth;
+        left: 100%;
         z-index: 8;
     }
 }
@@ -103,28 +108,28 @@ $loadBarWidth: 200px;
 @keyframes a1-loadBackground {
     0% {
         opacity: 1;
-        width: $loadBarWidth;
+        width: 100%;
         left: 0px;
         background-color: transparent;
         z-index: 1;
     }
     50% {
         opacity: 1;
-        width: $loadBarWidth;
+        width: 100%h;
         left: 0px;
         background-color: transparent;
         z-index: 1;
     }
     75% {
         opacity: 1;
-        width: $loadBarWidth;
+        width: 100%;
         left: 0px;
         background-color: map-get($map: $green, $key: "darken-2");
         z-index: 1;
     }
     100% {
         opacity: 1;
-        width: $loadBarWidth;
+        width: 100%;
         left: 0px;
         background-color: map-get($map: $green, $key: "darken-2");
         z-index: 1;
@@ -172,31 +177,31 @@ $loadBarWidth: 200px;
 
 .ce-run .loading-bars {
     animation-name: a1-loadBackground;
-    animation-duration: 4s;
-    animation-delay: 2s;
+    animation-duration: $loadBarDuration;
+    animation-delay: $loadBarDelay;
     animation-fill-mode: forwards;
 }
 
 .ce-run .bar1 {
     animation-name: a1-loadBar1;
-    animation-duration: 4s;
-    animation-delay: 2s;
+    animation-duration: $loadBarDuration;
+    animation-delay: $loadBarDelay;
     animation-iteration-count: infinite;
     display: block;
 }
 
 .ce-run .bar2 {
     animation-name: a1-loadBar2;
-    animation-duration: 4s;
-    animation-delay: 2s;
+    animation-duration: $loadBarDuration;
+    animation-delay: $loadBarDelay;
     animation-iteration-count: infinite;
     display: block;
 }
 
 .ce-run .bar3 {
     animation-name: a1-loadBar3;
-    animation-duration: 4s;
-    animation-delay: 2s;
+    animation-duration: $loadBarDuration;
+    animation-delay: $loadBarDelay;
     animation-iteration-count: infinite;
     display: block;
 }
