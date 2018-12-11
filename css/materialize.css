@@ -3141,7 +3141,7 @@ body { width: 800px; margin-right: auto; margin-left: auto; margin-bottom: 200px
 
 h1 { text-align: center; }
 
-.loading-bar-container { height: 40px; width: 200px; margin-right: auto; margin-left: auto; }
+.loading-bar-container { height: 20px; width: 200px; margin-right: auto; margin-left: auto; }
 
 @-webkit-keyframes a1-loadBar1 { 0% { width: 0px;
     left: 0px;
@@ -3281,9 +3281,9 @@ h1 { text-align: center; }
     background-color: #388E3C;
     z-index: 1; } }
 
-.loading-bars { position: relative; width: 200px; margin-top: 30px; margin-right: auto; margin-left: auto; height: 10px; opacity: 0; }
+.loading-bars { position: relative; width: 200px; margin-top: 30px; margin-right: auto; margin-left: auto; height: 5px; opacity: 0; }
 
-.loading-bar { position: absolute; content: ""; height: 10px; width: 200px; top: 0px; left: 0px; }
+.loading-bar { position: absolute; content: ""; height: 5px; width: 200px; top: 0px; left: 0px; }
 
 .bar1 { background-color: #1976D2; display: none; }
 
@@ -4405,8 +4405,6 @@ h1 { text-align: center; }
 .g7 .g7-top-x { width: 0px; height: 0px; border-left: 90px solid transparent; border-top: 120px solid #5BC0EB; border-right: 90px solid transparent; position: absolute; top: 0px; left: 600px; }
 
 .g7 .g7-bottom-x { width: 0px; height: 0px; border-left: 90px solid transparent; border-bottom: 120px solid #404E4D; border-right: 90px solid transparent; position: absolute; top: 80px; left: 600px; }
-<<<<<<< HEAD
-=======
 
 .g8 .face { width: 100%; height: 500px; background-color: #FDE74C; }
 
@@ -4497,5 +4495,3 @@ h1 { text-align: center; }
     left: 200px;
     background-color: #404E4D; }
   100% { background-color: transparent; } }
-/*# sourceMappingURL=materialize.css.map */
->>>>>>> 40416de81c4f5bdeebb74f3a0a7d15485ca26b26
